@@ -1,2 +1,0 @@
-# progressorr
-DENIS.MSK.RU
