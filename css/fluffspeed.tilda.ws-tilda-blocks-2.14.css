@@ -872,46 +872,6 @@
 	vertical-align: middle
 }
 
-.t-tildalabel_white .t-tildalabel__link,
-.t-tildalabel_gray .t-tildalabel__link {
-	color: #000
-}
-
-.t-tildalabel-free {
-	padding: 35px 0 45px;
-	height: auto;
-	text-align: center
-}
-
-.t-tildalabel-free__main {
-	max-width: 340px;
-	display: block;
-	margin: 0 auto;
-	line-height: 1.4;
-	letter-spacing: .2px;
-	color: inherit;
-	opacity: .4
-}
-
-.t-tildalabel-free__links-wr {
-	display: table;
-	margin: 30px auto 0
-}
-
-.t-tildalabel-free__txt-link {
-	display: table-cell;
-	padding: 0 15px;
-	font-size: 13px;
-	text-decoration: none;
-	color: inherit;
-	opacity: .25
-}
-
-.t-tildalabel-free__txt-link:hover,
-.t-tildalabel-free__main:hover {
-	opacity: 1
-}
-
 @media screen and (max-width:640px) {
 	.t-tildalabel-free__txt-link {
 		display: block;
