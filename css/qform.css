@@ -1,0 +1,5077 @@
+@charset "UTF-8";
+.overflowHidden {
+	overflow: hidden!important
+}
+
+form.qform {
+	background-color: inherit;
+	box-sizing: border-box;
+	font-family: Roboto\ 2, sans-serif !important;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: normal;
+	margin: 0;
+	padding: 5px;
+	width: 100%
+}
+
+form.qform .qform-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	margin: 0;
+	padding: 0
+}
+
+form.qform .qform-row .qform-field__error-box,
+form.qform .qform-row .qform-field__message-box {
+	display: none;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__error-box_shift,
+form.qform .qform-row .qform-field__message-box_shift {
+	display: none;
+	margin-right: 10px;
+	width: 30%
+}
+
+form.qform .qform-row .qform-field__error-box_text,
+form.qform .qform-row .qform-field__message-box_text {
+	color: #c80c0c;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	margin-top: 5px;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__error-box.error {
+	display: -ms-flexbox;
+	display: flex
+}
+
+@media screen and (max-width:768px) {
+	form.qform .qform-row {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap
+	}
+}
+
+form.qform .qform-field {
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+
+form.qform.qform-size-sm .qform-row .qform-field {
+	margin-bottom: 25px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field,
+form.qform.qform-size-md .qform-row .qform-field {
+	margin-bottom: 30px
+}
+
+form.qform.qform-theme-black {
+	background-color: transparent
+}
+
+form.qform.qform-size-sm .qform-row .qform-field__block_box__field-box {
+	height: 40px
+}
+
+form.qform.qform-size-sm .qform-row .qform-field.textarea .qform-field__block_box__field-box_input {
+	min-height: 80px
+}
+
+form.qform.qform-size-sm .qform-row .qform-field.checkbox .qform-field__block_box__field-box__dropzone.button,
+form.qform.qform-size-sm .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone.button,
+form.qform.qform-size-sm .qform-row .qform-field.radio .qform-field__block_box__field-box__dropzone.button {
+	height: 40px
+}
+
+form.qform.qform-size-sm .qform-row .qform-field.checkbox .qform-field__block_box__field-box__check,
+form.qform.qform-size-sm .qform-row .qform-field.file .qform-field__block_box__field-box__check,
+form.qform.qform-size-sm .qform-row .qform-field.radio .qform-field__block_box__field-box__check {
+	height: 20px;
+	width: 20px
+}
+
+form.qform.qform-size-sm .qform-row .qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform.qform-size-sm .qform-row .qform-field.file .qform-field__block_box__field-box__check:after,
+form.qform.qform-size-sm .qform-row .qform-field.radio .qform-field__block_box__field-box__check:after {
+	height: 7px;
+	left: 5.5px;
+	top: 5.5px;
+	width: 7px
+}
+
+form.qform.qform-size-md .qform-row .qform-field__block_box__field-box {
+	height: 50px
+}
+
+form.qform.qform-size-md .qform-row .qform-field.textarea .qform-field__block_box__field-box_input {
+	min-height: 90px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field__block_box__field-box {
+	height: 60px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field__block_box__field-box_input {
+	font-size: 15px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field.textarea .qform-field__block_box__field-box_input {
+	min-height: 100px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field.checkbox .qform-field__block_box__field-box__dropzone.button,
+form.qform.qform-size-lg .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone.button,
+form.qform.qform-size-lg .qform-row .qform-field.radio .qform-field__block_box__field-box__dropzone.button {
+	height: 60px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field.checkbox .qform-field__block_box__field-box__check,
+form.qform.qform-size-lg .qform-row .qform-field.file .qform-field__block_box__field-box__check,
+form.qform.qform-size-lg .qform-row .qform-field.radio .qform-field__block_box__field-box__check {
+	height: 30px;
+	width: 30px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform.qform-size-lg .qform-row .qform-field.file .qform-field__block_box__field-box__check:after,
+form.qform.qform-size-lg .qform-row .qform-field.radio .qform-field__block_box__field-box__check:after {
+	height: 13px;
+	left: 7.5px;
+	top: 7.5px;
+	width: 13px
+}
+
+form.qform.qform-background.qform-radius-0px .qform-row .qform-field__block_box__field,
+form.qform.qform-background.qform-radius-0px .qform-row .qform-field__block_box__field-box_input,
+form.qform.qform-default-background.qform-radius-0px .qform-row .qform-field__block_box__field,
+form.qform.qform-default-background.qform-radius-0px .qform-row .qform-field__block_box__field-box_input,
+form.qform.qform-default.qform-radius-0px .qform-row .qform-field__block_box__field,
+form.qform.qform-default.qform-radius-0px .qform-row .qform-field__block_box__field-box_input {
+	border-radius: 0
+}
+
+form.qform.qform-background.qform-radius-5px .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone,
+form.qform.qform-background.qform-radius-5px .qform-row .qform-field__block_box__field,
+form.qform.qform-background.qform-radius-5px .qform-row .qform-field__block_box__field-box_input,
+form.qform.qform-default-background.qform-radius-5px .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone,
+form.qform.qform-default-background.qform-radius-5px .qform-row .qform-field__block_box__field,
+form.qform.qform-default-background.qform-radius-5px .qform-row .qform-field__block_box__field-box_input,
+form.qform.qform-default.qform-radius-5px .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone,
+form.qform.qform-default.qform-radius-5px .qform-row .qform-field__block_box__field,
+form.qform.qform-default.qform-radius-5px .qform-row .qform-field__block_box__field-box_input {
+	border-radius: 5px
+}
+
+form.qform.qform-background.qform-radius-25px .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone,
+form.qform.qform-background.qform-radius-25px .qform-row .qform-field__block_box__field,
+form.qform.qform-background.qform-radius-25px .qform-row .qform-field__block_box__field-box_input,
+form.qform.qform-default-background.qform-radius-25px .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone,
+form.qform.qform-default-background.qform-radius-25px .qform-row .qform-field__block_box__field,
+form.qform.qform-default-background.qform-radius-25px .qform-row .qform-field__block_box__field-box_input,
+form.qform.qform-default.qform-radius-25px .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone,
+form.qform.qform-default.qform-radius-25px .qform-row .qform-field__block_box__field,
+form.qform.qform-default.qform-radius-25px .qform-row .qform-field__block_box__field-box_input {
+	border-radius: 25px
+}
+
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field__block_box__field {
+	background-color: #ebf0fa;
+	border: none;
+	border-radius: 25px;
+	position: relative
+}
+
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field__block_box__field-box_input {
+	border-radius: 25px
+}
+
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field__block_box__field:before {
+	background-color: #b8c1d1;
+	bottom: 1px;
+	content: "";
+	display: block;
+	height: .5px;
+	left: 20px;
+	position: absolute;
+	width: calc(100% - 40px)
+}
+
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field.checkbox .qform-field__block_box__field-box__dropzone,
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone,
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field.radio .qform-field__block_box__field-box__dropzone {
+	border-radius: 25px
+}
+
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field.checkbox .qform-field__block_box__field:before,
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field.file .qform-field__block_box__field:before,
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field.radio .qform-field__block_box__field:before {
+	display: none
+}
+
+form.qform.qform-label_outside_left.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input::-webkit-input-placeholder,
+form.qform.qform-label_outside_top.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input::-webkit-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_outside_left.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input::-moz-placeholder,
+form.qform.qform-label_outside_top.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input::-moz-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_outside_left.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input:-ms-input-placeholder,
+form.qform.qform-label_outside_top.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input:-ms-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_outside_left.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input::-ms-input-placeholder,
+form.qform.qform-label_outside_top.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input::-ms-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_outside_left.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input::placeholder,
+form.qform.qform-label_outside_top.qform-placeholder_hide .qform-row .qform-field__block_box__field-box_input::placeholder {
+	color: transparent
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_label {
+	color: #3f444f;
+	cursor: default;
+	display: inline-block;
+	font-family: inherit;
+	font-weight: 600
+}
+
+form.qform .qform-row .qform-field-outside-label-box {
+	-ms-flex-align: center;
+	align-items: center;
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	margin-bottom: 10px
+}
+
+form.qform .qform-row .qform-field-outside-label-box_label {
+	color: #3f444f;
+	cursor: default;
+	display: inline-block;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: normal;
+	margin-bottom: 0;
+	margin-right: 10px;
+	word-break: break-all
+}
+
+form.qform .qform-row .qform-field.required .qform-field-outside-label-box_label:after,
+form.qform .qform-row .qform-field.required .qform-field__block_box__field-box_label:after {
+	color: #c80c0c;
+	content: "*";
+	font-family: Roboto\ 2;
+	font-size: 14px;
+	font-weight: 600;
+	margin-left: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+form.qform .qform-row .qform-field.not-required .qform-field-outside-label-box_label:after,
+form.qform .qform-row .qform-field.not-required .qform-field__block_box__field-box_label:after {
+	color: #8d8c8c;
+	content: "(не обязательно)";
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label:after,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label:after {
+	font-size: 11px;
+	top: 5px
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label:after,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label:after {
+	font-size: 11px;
+	top: 5px
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label:after,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label:after,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label:after,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label:after,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label:after,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label:after {
+	font-size: 11px;
+	top: 5px
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input::-webkit-input-placeholder,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input::-webkit-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input::-moz-placeholder,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input::-moz-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:-ms-input-placeholder,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:-ms-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input::-ms-input-placeholder,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input::-ms-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input::placeholder,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input::placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_label {
+	color: #8a95ac;
+	content: "";
+	display: block;
+	font-size: 15px;
+	font-weight: 500;
+	left: 8.5px;
+	line-height: normal;
+	margin: 0 0 10px;
+	overflow: hidden;
+	position: absolute;
+	text-overflow: ellipsis;
+	top: 10px;
+	transition: .3s;
+	white-space: nowrap;
+	width: calc(100% - 5px)
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field .qform-field-outside-label-box,
+form.qform.qform-label_inside_show .qform-row .qform-field .qform-field-outside-label-box {
+	display: none
+}
+
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown) {
+	padding-bottom: 6px;
+	padding-top: 25px
+}
+
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder) {
+	padding-bottom: 6px;
+	padding-top: 25px
+}
+
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:active,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:focus,
+form.qform.qform-label_inside_show .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown) {
+	padding-bottom: 6px;
+	padding-top: 25px
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label {
+	opacity: 0
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label {
+	opacity: 0
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label {
+	opacity: 0
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input::-webkit-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input::-moz-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input:-ms-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input::-ms-input-placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field-box_input::placeholder {
+	color: transparent
+}
+
+form.qform.qform-label_inside_hide .qform-row .qform-field__block_box__field.focus .qform-field__block_box__field-box .qform-field__block_box__field-box_label {
+	opacity: 0
+}
+
+form.qform.qform-label_inside_hide.qform-size-md .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-md .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label {
+	font-size: 12px;
+	top: 9px
+}
+
+form.qform.qform-label_inside_hide.qform-size-md .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-md .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label {
+	font-size: 12px;
+	top: 9px
+}
+
+form.qform.qform-label_inside_hide.qform-size-md .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide.qform-size-md .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide.qform-size-md .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-md .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-md .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-md .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label {
+	font-size: 12px;
+	top: 9px
+}
+
+form.qform.qform-label_inside_hide.qform-size-md .qform-row .qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-md .qform-row .qform-field__block_box__field-box_label {
+	top: 15px
+}
+
+form.qform.qform-label_inside_hide.qform-size-lg .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-lg .qform-row .qform-field__block_box__field-box_input:not(:-moz-placeholder-shown)+.qform-field__block_box__field-box_label {
+	font-size: 13px;
+	top: 13px
+}
+
+form.qform.qform-label_inside_hide.qform-size-lg .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-lg .qform-row .qform-field__block_box__field-box_input:not(:-ms-input-placeholder)+.qform-field__block_box__field-box_label {
+	font-size: 13px;
+	top: 13px
+}
+
+form.qform.qform-label_inside_hide.qform-size-lg .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide.qform-size-lg .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_hide.qform-size-lg .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-lg .qform-row .qform-field__block_box__field-box_input:active+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-lg .qform-row .qform-field__block_box__field-box_input:focus+.qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-lg .qform-row .qform-field__block_box__field-box_input:not(:placeholder-shown)+.qform-field__block_box__field-box_label {
+	font-size: 13px;
+	top: 13px
+}
+
+form.qform.qform-label_inside_hide.qform-size-lg .qform-row .qform-field__block_box__field-box .qform-field__block_box__field-box_label,
+form.qform.qform-label_inside_show.qform-size-lg .qform-row .qform-field__block_box__field-box .qform-field__block_box__field-box_label {
+	top: 20px
+}
+
+form.qform.qform-label_outside_left .qform-row .qform-field__block_box__field-box_label,
+form.qform.qform-label_outside_top .qform-row .qform-field__block_box__field-box_label {
+	display: none
+}
+
+form.qform.qform-label_outside_left .qform-row .qform-field-outside-label-box,
+form.qform.qform-label_outside_top .qform-row .qform-field-outside-label-box {
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%
+}
+
+form.qform.qform-label_outside_left .qform-row .qform-field_wrap {
+	-ms-flex-align: center;
+	align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap
+}
+
+form.qform.qform-label_outside_left .qform-row .qform-field-outside-label-box {
+	margin-bottom: 0;
+	margin-right: 10px;
+	width: 30%
+}
+
+form.qform.qform-label_outside_left .qform-row .qform-field__block {
+	width: 100%
+}
+
+form.qform.qform-label_outside_left .qform-row .qform-field .qform-field__bottom-box {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-label_outside_left .qform-row .qform-field .qform-field__bottom-box_shift {
+	display: block
+}
+
+@media screen and (max-width:768px) {
+	form.qform.qform-label_outside_left .qform-row .qform-field_wrap {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap
+	}
+	form.qform.qform-label_outside_left .qform-row .qform-field-outside-label-box {
+		margin-bottom: 10px;
+		margin-right: 0;
+		width: 100%
+	}
+	form.qform.qform-label_outside_left .qform-row .qform-field__bottom-box_shift-box {
+		display: -ms-flexbox;
+		display: flex
+	}
+	form.qform.qform-label_outside_left .qform-row .qform-field__bottom-box_shift {
+		display: none!important
+	}
+}
+
+form.qform.qform-label_outside_top.qform-size-lg .qform-row .qform-field-outside-label-box,
+form.qform.qform-label_outside_top.qform-size-md .qform-row .qform-field-outside-label-box {
+	margin-bottom: 15px
+}
+
+form.qform .qform-row .qform-field__bottom-box_message {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform .qform-row .qform-field__bottom-box_message .qform-field_shift-box {
+	display: none;
+	margin-left: -2.5px;
+	margin-right: 10px
+}
+
+form.qform .qform-row .qform-field__bottom-box_message .qform-field_shift-hint,
+form.qform .qform-row .qform-field__bottom-box_message .qform-field_shift-icon,
+form.qform .qform-row .qform-field__bottom-box_message .qform-field_shift-valid {
+	-ms-flex-negative: 0;
+	display: none;
+	flex-shrink: 0;
+	height: 20px;
+	margin: 0 2.5px;
+	width: 20px
+}
+
+form.qform .qform-row .qform-field-outside-label-box,
+form.qform .qform-row .qform-field_att-in_left,
+form.qform .qform-row .qform-field_att-in_right,
+form.qform .qform-row .qform-field_att-out_left,
+form.qform .qform-row .qform-field_att-out_right {
+	-ms-flex-align: center;
+	align-items: center;
+	display: none;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap
+}
+
+form.qform .qform-row .qform-field-outside-label-box .qform-field_hint,
+form.qform .qform-row .qform-field-outside-label-box .qform-field_icon,
+form.qform .qform-row .qform-field-outside-label-box .qform-field_valid,
+form.qform .qform-row .qform-field_att-in_left .qform-field_hint,
+form.qform .qform-row .qform-field_att-in_left .qform-field_icon,
+form.qform .qform-row .qform-field_att-in_left .qform-field_valid,
+form.qform .qform-row .qform-field_att-in_right .qform-field_hint,
+form.qform .qform-row .qform-field_att-in_right .qform-field_icon,
+form.qform .qform-row .qform-field_att-in_right .qform-field_valid,
+form.qform .qform-row .qform-field_att-out_left .qform-field_hint,
+form.qform .qform-row .qform-field_att-out_left .qform-field_icon,
+form.qform .qform-row .qform-field_att-out_left .qform-field_valid,
+form.qform .qform-row .qform-field_att-out_right .qform-field_hint,
+form.qform .qform-row .qform-field_att-out_right .qform-field_icon,
+form.qform .qform-row .qform-field_att-out_right .qform-field_valid {
+	-ms-flex-negative: 0;
+	display: none;
+	flex-shrink: 0;
+	height: 20px;
+	margin: 0 2.5px;
+	width: 20px
+}
+
+form.qform .qform-row .qform-field-outside-label-box .qform-field_hint:before,
+form.qform .qform-row .qform-field-outside-label-box .qform-field_valid:before,
+form.qform .qform-row .qform-field_att-in_left .qform-field_hint:before,
+form.qform .qform-row .qform-field_att-in_left .qform-field_valid:before,
+form.qform .qform-row .qform-field_att-in_right .qform-field_hint:before,
+form.qform .qform-row .qform-field_att-in_right .qform-field_valid:before,
+form.qform .qform-row .qform-field_att-out_left .qform-field_hint:before,
+form.qform .qform-row .qform-field_att-out_left .qform-field_valid:before,
+form.qform .qform-row .qform-field_att-out_right .qform-field_hint:before,
+form.qform .qform-row .qform-field_att-out_right .qform-field_valid:before {
+	border-radius: 50%;
+	content: "";
+	display: block;
+	height: 20px;
+	position: absolute;
+	width: 20px
+}
+
+form.qform .qform-row .qform-field-outside-label-box .qform-field_hint:after,
+form.qform .qform-row .qform-field-outside-label-box .qform-field_valid:after,
+form.qform .qform-row .qform-field_att-in_left .qform-field_hint:after,
+form.qform .qform-row .qform-field_att-in_left .qform-field_valid:after,
+form.qform .qform-row .qform-field_att-in_right .qform-field_hint:after,
+form.qform .qform-row .qform-field_att-in_right .qform-field_valid:after,
+form.qform .qform-row .qform-field_att-out_left .qform-field_hint:after,
+form.qform .qform-row .qform-field_att-out_left .qform-field_valid:after,
+form.qform .qform-row .qform-field_att-out_right .qform-field_hint:after,
+form.qform .qform-row .qform-field_att-out_right .qform-field_valid:after {
+	background-color: transparent;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	content: "";
+	display: block;
+	height: 20px;
+	position: absolute;
+	width: 20px
+}
+
+form.qform .qform-row .qform-field-outside-label-box .qform-field_hint:after,
+form.qform .qform-row .qform-field_att-in_left .qform-field_hint:after,
+form.qform .qform-row .qform-field_att-in_right .qform-field_hint:after,
+form.qform .qform-row .qform-field_att-out_left .qform-field_hint:after,
+form.qform .qform-row .qform-field_att-out_right .qform-field_hint:after {
+	background-size: 40%
+}
+
+form.qform .qform-row .qform-field-outside-label-box .qform-field_hint,
+form.qform .qform-row .qform-field_att-in_left .qform-field_hint,
+form.qform .qform-row .qform-field_att-in_right .qform-field_hint,
+form.qform .qform-row .qform-field_att-out_left .qform-field_hint,
+form.qform .qform-row .qform-field_att-out_right .qform-field_hint {
+	position: relative
+}
+
+form.qform .qform-row .qform-field-outside-label-box .qform-field_hint_message,
+form.qform .qform-row .qform-field_att-in_left .qform-field_hint_message,
+form.qform .qform-row .qform-field_att-in_right .qform-field_hint_message,
+form.qform .qform-row .qform-field_att-out_left .qform-field_hint_message,
+form.qform .qform-row .qform-field_att-out_right .qform-field_hint_message {
+	-ms-flex-pack: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	background: #c4c4c4;
+	color: #8d8c8c;
+	content: "";
+	display: none;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	height: 0;
+	justify-content: flex-start;
+	overflow: hidden;
+	overflow-y: auto;
+	padding: 0;
+	position: absolute;
+	top: calc(50% - 20px);
+	transition: .3s ease-in;
+	width: 274px;
+	z-index: -9999
+}
+
+form.qform .qform-row .qform-field-outside-label-box .qform-field_hint_message p,
+form.qform .qform-row .qform-field_att-in_left .qform-field_hint_message p,
+form.qform .qform-row .qform-field_att-in_right .qform-field_hint_message p,
+form.qform .qform-row .qform-field_att-out_left .qform-field_hint_message p,
+form.qform .qform-row .qform-field_att-out_right .qform-field_hint_message p {
+	margin: 0;
+	padding: 5px
+}
+
+form.qform .qform-row .qform-field-outside-label-box .qform-field_hint:hover .qform-field_hint_message,
+form.qform .qform-row .qform-field_att-in_left .qform-field_hint:hover .qform-field_hint_message,
+form.qform .qform-row .qform-field_att-in_right .qform-field_hint:hover .qform-field_hint_message,
+form.qform .qform-row .qform-field_att-out_left .qform-field_hint:hover .qform-field_hint_message,
+form.qform .qform-row .qform-field_att-out_right .qform-field_hint:hover .qform-field_hint_message {
+	height: 50px;
+	top: calc(50% - 62px);
+	z-index: 99999
+}
+
+form.qform .qform-row .qform-field_att-in_left {
+	display: -ms-flexbox;
+	display: flex;
+	margin-left: -2.5px;
+	padding-left: 14px
+}
+
+form.qform .qform-row .qform-field_att-in_right {
+	margin-right: -2.5px;
+	padding-right: 14px
+}
+
+form.qform .qform-row .qform-field_att-out_left {
+	margin-left: -2.5px;
+	margin-right: 10px
+}
+
+form.qform .qform-row .qform-field_att-out_right {
+	margin-left: 10px;
+	margin-right: -2.5px
+}
+
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-address .qform-field_att-in_left,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-date .qform-field_att-in_left,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-email .qform-field_att-in_left,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-in_left,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-time .qform-field_att-in_left,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-user .qform-field_att-in_left {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-address .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-date .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-email .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-time .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-user .qform-field_att-in_left .qform-field_icon {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	display: block;
+	padding: 5px 0
+}
+
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-address .qform-field_att-in_right,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-date .qform-field_att-in_right,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-email .qform-field_att-in_right,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-in_right,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-time .qform-field_att-in_right,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-user .qform-field_att-in_right {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-address .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-date .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-email .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-time .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-user .qform-field_att-in_right .qform-field_icon {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	display: block;
+	padding: 5px 0
+}
+
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field_att-out_left,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field_att-out_left,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field_att-out_left,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-out_left,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field_att-out_left,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field_att-out_left {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field_att-out_left .qform-field_icon {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	display: block;
+	padding: 5px 0
+}
+
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field__bottom-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field__bottom-box_message .qform-field_shift-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field__bottom-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field__bottom-box_message .qform-field_shift-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field__bottom-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field__bottom-box_message .qform-field_shift-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field__bottom-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field__bottom-box_message .qform-field_shift-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field__bottom-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field__bottom-box_message .qform-field_shift-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field__bottom-box,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field__bottom-box_message .qform-field_shift-box {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-icon {
+	display: block
+}
+
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-address .qform-field_att-out_right,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-date .qform-field_att-out_right,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-email .qform-field_att-out_right,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-out_right,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-time .qform-field_att-out_right,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-user .qform-field_att-out_right {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-address .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-date .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-email .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-time .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-user .qform-field_att-out_right .qform-field_icon {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	display: block;
+	padding: 5px 0
+}
+
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-date .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-date .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-date .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-date .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-date .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-date .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-date .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-date .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-date .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-date .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-date .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-date .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-date .qform-field_att-out_right .qform-field_icon {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.3 1v4.002M4.7 1v4.002m-3.2 2.2h14M2.88 2.992h11.25A1.76 1.76 0 0 1 16 4.61v9.755a1.76 1.76 0 0 1-1.87 1.63H2.88A1.77 1.77 0 0 1 1 14.366V4.61a1.771 1.771 0 0 1 1.88-1.62Z' stroke='%23B8C1D1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-email .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-email .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-email .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-email .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-email .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-email .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-email .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-email .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-email .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-email .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-email .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-email .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-email .qform-field_att-out_right .qform-field_icon {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12Zm0-1H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Z' fill='%23B8C1D1'/%3E%3Cpath d='M16 1.65v.61L8 7.97 0 2.26v-.61l.29-.41L8 6.74l7.71-5.5.29.41Z' fill='%23B8C1D1'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-out_right .qform-field_icon {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.998 13.08v1.33a1.573 1.573 0 0 1-1.077 1.51c-.21.069-.433.093-.653.07A15.09 15.09 0 0 1 1.008 2.73 1.57 1.57 0 0 1 2.588 1h1.65a1.59 1.59 0 0 1 1.58 1.43l.31 3.1-1.63.83a12.72 12.72 0 0 0 6.14 6.14l.86-1.63 3.25.65a1.59 1.59 0 0 1 1.25 1.56Z' stroke='%23B8C1D1' stroke-linejoin='round'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-user .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-user .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-user .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-user .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-user .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-user .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-user .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-user .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-user .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-user .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-user .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-user .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-user .qform-field_att-out_right .qform-field_icon {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 8.02a7.14 7.14 0 0 1 3.728 1.002 7.777 7.777 0 0 1 2.644 2.697 1.01 1.01 0 0 1-.238 1.313A10.477 10.477 0 0 1 7.5 15.018c-2.2 0-4.345-.695-6.134-1.986a1.004 1.004 0 0 1-.238-1.293 7.778 7.778 0 0 1 2.644-2.717A7.14 7.14 0 0 1 7.501 8.02Zm0-1.003A8.198 8.198 0 0 0 3.257 8.2a8.805 8.805 0 0 0-2.982 3.008 2.02 2.02 0 0 0 .517 2.616A11.446 11.446 0 0 0 7.5 16c2.407 0 4.753-.761 6.71-2.176a2.02 2.02 0 0 0 .517-2.616A8.805 8.805 0 0 0 11.744 8.2a8.198 8.198 0 0 0-4.244-1.183Z' fill='%23B8C1D1'/%3E%3Cpath d='M7.5 1.002c.59 0 1.167.177 1.657.507s.873.8 1.099 1.35a3.032 3.032 0 0 1-.647 3.277 2.959 2.959 0 0 1-3.25.652 2.988 2.988 0 0 1-1.338-1.107 3.026 3.026 0 0 1 .371-3.798 2.97 2.97 0 0 1 2.109-.88ZM7.5 0c-.786 0-1.555.235-2.208.676a4.003 4.003 0 0 0-1.465 1.8 4.041 4.041 0 0 0 .862 4.37c.556.56 1.265.942 2.036 1.097.771.154 1.57.075 2.297-.229a3.984 3.984 0 0 0 1.785-1.476 4.034 4.034 0 0 0-.495-5.064A3.96 3.96 0 0 0 7.501 0Z' fill='%23B8C1D1'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-address .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-address .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-address .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-address .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-address .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-address .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-address .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-address .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-address .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-address .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-address .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-address .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-address .qform-field_att-out_right .qform-field_icon {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='12' height='16' viewBox='0 0 12 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.765 6.09c0 1.25 1.003 2.268 2.235 2.268S8.235 7.34 8.235 6.089c0-1.25-1.003-2.268-2.235-2.268S3.765 4.838 3.765 6.089Zm3.764 0c0 .855-.686 1.552-1.529 1.552-.843 0-1.53-.697-1.53-1.553S5.158 4.537 6 4.537s1.53.696 1.53 1.552Z' fill='%23B8C1D1'/%3E%3Cpath d='M0 6.09c0 1.278.392 2.506 1.132 3.549l4.21 6.027c.154.21.4.334.658.334a.828.828 0 0 0 .664-.342L10.67 9.92l.198-.278A6.108 6.108 0 0 0 12 6.089C12 2.731 9.308 0 6 0S0 2.731 0 6.09Zm11.294 0a5.388 5.388 0 0 1-1 3.133l-4.2 6.013c-.044.06-.15.052-.182.008l-4.058-5.81-.149-.213a5.384 5.384 0 0 1-1-3.132C.706 3.127 3.082.716 6 .716c2.92 0 5.294 2.41 5.294 5.373Z' fill='%23B8C1D1'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-time .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-time .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-time .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_left .qform-row .qform-field.qform_icon-time .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-time .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-time .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-time .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_inside_right .qform-row .qform-field.qform_icon-time .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_left .qform-row .qform-field.qform_icon-time .qform-field_att-out_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-time .qform-field_att-in_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-time .qform-field_att-in_right .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-time .qform-field_att-out_left .qform-field_icon,
+form.qform.qform-icon_outside_right .qform-row .qform-field.qform_icon-time .qform-field_att-out_right .qform-field_icon {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='17' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 4a.5.5 0 0 0-1 0h1Zm-.5 5H8a.5.5 0 0 0 .223.416L8.5 9Zm2.723 2.416a.5.5 0 0 0 .554-.832l-.554.832ZM8 4v5h1V4H8Zm.223 5.416 3 2 .554-.832-3-2-.554.832ZM15.5 8.5a7 7 0 0 1-7 7v1a8 8 0 0 0 8-8h-1Zm-7 7a7 7 0 0 1-7-7h-1a8 8 0 0 0 8 8v-1Zm-7-7a7 7 0 0 1 7-7v-1a8 8 0 0 0-8 8h1Zm7-7a7 7 0 0 1 7 7h1a8 8 0 0 0-8-8v1Z' fill='%23B8C1D1'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-underline.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-in_left,
+form.qform.qform-underline.qform-icon_inside_left .qform-row .qform-field.qform_icon-address .qform-field_att-in_left,
+form.qform.qform-underline.qform-icon_inside_left .qform-row .qform-field.qform_icon-date .qform-field_att-in_left,
+form.qform.qform-underline.qform-icon_inside_left .qform-row .qform-field.qform_icon-email .qform-field_att-in_left,
+form.qform.qform-underline.qform-icon_inside_left .qform-row .qform-field.qform_icon-phone .qform-field_att-in_left,
+form.qform.qform-underline.qform-icon_inside_left .qform-row .qform-field.qform_icon-time .qform-field_att-in_left,
+form.qform.qform-underline.qform-icon_inside_left .qform-row .qform-field.qform_icon-user .qform-field_att-in_left,
+form.qform.qform-underline.qform-icon_inside_right .qform-row .qform-field.qform_icon-address .qform-field_att-in_right,
+form.qform.qform-underline.qform-icon_inside_right .qform-row .qform-field.qform_icon-date .qform-field_att-in_right,
+form.qform.qform-underline.qform-icon_inside_right .qform-row .qform-field.qform_icon-email .qform-field_att-in_right,
+form.qform.qform-underline.qform-icon_inside_right .qform-row .qform-field.qform_icon-phone .qform-field_att-in_right,
+form.qform.qform-underline.qform-icon_inside_right .qform-row .qform-field.qform_icon-time .qform-field_att-in_right,
+form.qform.qform-underline.qform-icon_inside_right .qform-row .qform-field.qform_icon-user .qform-field_att-in_right,
+form.qform.qform-underline.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-in_left {
+	padding-right: 8.5px
+}
+
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:before,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:before,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:before,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:before,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:before {
+	background-color: #0cc863
+}
+
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:after,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:after,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:after,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:after,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='24' height='23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 11.906 9.365 8.027 12.04-18.73' stroke='%23000' stroke-width='3'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-valid_light .qform-row .qform-field.valid .qform-field__block_box__field {
+	border-color: #0cc863
+}
+
+form.qform.qform-valid_light .qform-row .qform-field.valid .qform-field__block_box__field:before {
+	background-color: #0cc863
+}
+
+form.qform.qform-valid_inside-left .qform-row .qform-field.valid .qform-field_att-in_left .qform-field_valid,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-in_right,
+form.qform.qform-valid_inside-right .qform-row .qform-field.valid .qform-field_att-in_right .qform-field_valid,
+form.qform.qform-valid_label .qform-row .qform-field.valid .qform-field-outside-label-box .qform-field_valid,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field__bottom-box,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field__bottom-box_message .qform-field_shift-box,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-out_left,
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field_att-out_left .qform-field_valid {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-valid_outside-left .qform-row .qform-field.valid .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-valid {
+	display: block
+}
+
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-out_right,
+form.qform.qform-valid_outside-right .qform-row .qform-field.valid .qform-field_att-out_right .qform-field_valid {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:before,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:before,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:before,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:before,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:before,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:before,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:before,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:before,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:before {
+	background-color: #c80c0c
+}
+
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:after,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:after,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:after,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:after,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid:after,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid:after,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid:after,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid:after,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='21' height='21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='3' d='M19.914 19.096 1.879 1.061M2 19.395 20.035 1.36'/%3E%3C/svg%3E");
+	background-size: 50%
+}
+
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field__bottom-box,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field__bottom-box,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field__bottom-box,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field__bottom-box,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field__bottom-box {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field__bottom-box_message__error,
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field__bottom-box_message__error,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field__bottom-box_message__error,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field__bottom-box_message__error,
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field__bottom-box_message__error {
+	display: block
+}
+
+form.qform.qform-error_light .qform-row .qform-field.error .qform-field__block_box__field {
+	border-color: #c80c0c
+}
+
+form.qform.qform-error_light .qform-row .qform-field.error .qform-field__block_box__field:before {
+	background-color: #c80c0c
+}
+
+form.qform.qform-error_light .qform-row .qform-field.error .qform-field__bottom-box {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-error_inside-left .qform-row .qform-field.error .qform-field_att-in_left .qform-field_valid,
+form.qform.qform-error_label .qform-row .qform-field.error .qform-field-outside-label-box .qform-field_valid,
+form.qform.qform-error_light .qform-row .qform-field.error .qform-field__bottom-box_message__error {
+	display: block
+}
+
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-in_right {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-error_inside-right .qform-row .qform-field.error .qform-field_att-in_right .qform-field_valid {
+	display: block
+}
+
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-out_left {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field_att-out_left .qform-field_valid {
+	display: block
+}
+
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field__bottom-box,
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field__bottom-box_message .qform-field_shift-box {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-error_outside-left .qform-row .qform-field.error .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-valid {
+	display: block
+}
+
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-out_right {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-error_outside-right .qform-row .qform-field.error .qform-field_att-out_right .qform-field_valid {
+	display: block
+}
+
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:before,
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:before,
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:before,
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:before,
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:before,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:before,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:before,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:before,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:before,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:before,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:before,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:before,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:before,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:before,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:before,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:before,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:before,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:before,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:before,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:before,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:before,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:before,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:before,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:before,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:before {
+	background-color: #c4c4c4
+}
+
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:after,
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:after,
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:after,
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:after,
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:after,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:after,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:after,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:after,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:after,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:after,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:after,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:after,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:after,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:after,
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:after,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:after,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:after,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:after,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:after,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:after,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint:after,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint:after,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint:after,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint:after,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='12' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.88 15.395c.02-1.085.142-1.942.37-2.57.228-.63.693-1.327 1.395-2.093l1.79-1.845c.766-.866 1.149-1.796 1.149-2.79 0-.956-.25-1.704-.752-2.242-.501-.546-1.23-.82-2.187-.82-.93 0-1.678.246-2.243.738-.565.493-.847 1.153-.847 1.983H.025C.044 4.279.568 3.09 1.598 2.187 2.637 1.276 3.986.82 5.645.82c1.722 0 3.062.465 4.02 1.395.965.92 1.448 2.187 1.448 3.8 0 1.596-.738 3.168-2.215 4.717l-1.49 1.477c-.665.738-.998 1.8-.998 3.186H3.88Zm-.109 4.334c0-.41.124-.752.37-1.026.255-.282.629-.424 1.12-.424.493 0 .867.142 1.122.424.255.274.383.615.383 1.026 0 .41-.128.752-.383 1.025-.255.264-.63.396-1.121.396-.492 0-.866-.132-1.121-.396-.246-.274-.37-.615-.37-1.026Z' fill='%23000'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-hint_bottom .qform-row .qform-field.hint .qform-field__bottom-box {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-hint_bottom .qform-row .qform-field.hint .qform-field__bottom-box_message__hint {
+	display: block
+}
+
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-hint_label .qform-row .qform-field.hint .qform-field-outside-label-box .qform-field_hint_message {
+	display: block
+}
+
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-hint_inside-left .qform-row .qform-field.hint .qform-field_att-in_left .qform-field_hint_message {
+	display: block
+}
+
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-in_right,
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-hint_inside-right .qform-row .qform-field.hint .qform-field_att-in_right .qform-field_hint_message {
+	display: block;
+	right: 14px
+}
+
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-out_left,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field_att-out_left .qform-field_hint_message {
+	display: block
+}
+
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field__bottom-box,
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field__bottom-box_message .qform-field_shift-box {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-hint_outside-left .qform-row .qform-field.hint .qform-field__bottom-box_message .qform-field_shift-box .qform-field_shift-hint {
+	display: block
+}
+
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-out_right,
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-hint_outside-right .qform-row .qform-field.hint .qform-field_att-out_right .qform-field_hint_message {
+	display: block;
+	right: 14px
+}
+
+.qform-field__quiz-btn__btn-prev {
+	background: #ebf0fa;
+	color: #3f444f;
+	margin-bottom: 10px;
+	margin-right: 10px
+}
+
+.qform-field__quiz-btn__btn-next,
+.qform-field__quiz-btn__btn-prev {
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-family: Roboto\ 2 !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	height: 50px;
+	letter-spacing: .02em;
+	line-height: 18px;
+	outline: none;
+	width: 135px
+}
+
+.qform-field__quiz-btn__btn-next {
+	background: #0cc863;
+	color: #fff
+}
+
+form.qform.qform-size-sm .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-size-sm .qform-row .qform-field__quiz-btn__btn-prev {
+	height: 40px
+}
+
+form.qform.qform-size-md .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-size-md .qform-row .qform-field__quiz-btn__btn-prev {
+	height: 50px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-size-lg .qform-row .qform-field__quiz-btn__btn-prev {
+	height: 60px
+}
+
+form.qform.qform-background.qform-radius-0px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-background.qform-radius-0px .qform-row .qform-field__quiz-btn__btn-prev,
+form.qform.qform-default-background.qform-radius-0px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-default-background.qform-radius-0px .qform-row .qform-field__quiz-btn__btn-prev,
+form.qform.qform-default.qform-radius-0px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-default.qform-radius-0px .qform-row .qform-field__quiz-btn__btn-prev {
+	border-radius: 0
+}
+
+form.qform.qform-background.qform-radius-5px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-background.qform-radius-5px .qform-row .qform-field__quiz-btn__btn-prev,
+form.qform.qform-default-background.qform-radius-5px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-default-background.qform-radius-5px .qform-row .qform-field__quiz-btn__btn-prev,
+form.qform.qform-default.qform-radius-5px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-default.qform-radius-5px .qform-row .qform-field__quiz-btn__btn-prev {
+	border-radius: 5px
+}
+
+form.qform.qform-background.qform-radius-25px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-background.qform-radius-25px .qform-row .qform-field__quiz-btn__btn-prev,
+form.qform.qform-default-background.qform-radius-25px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-default-background.qform-radius-25px .qform-row .qform-field__quiz-btn__btn-prev,
+form.qform.qform-default.qform-radius-25px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-default.qform-radius-25px .qform-row .qform-field__quiz-btn__btn-prev,
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field__quiz-btn__btn-prev {
+	border-radius: 25px
+}
+
+form.qform.qform-theme-black .qform-row .qform-field__quiz-btn__btn-next,
+form.qform.qform-theme-black .qform-row .qform-field__quiz-btn__btn-prev {
+	background-color: transparent;
+	border: 1px solid;
+	color: #fff
+}
+
+form.qform .qform-row .qform-field_wrap {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__block {
+	-ms-flex-align: center;
+	align-items: center;
+	border: none;
+	border-radius: 0;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__block_box {
+	min-width: 210px;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__block_box__field {
+	-ms-flex-align: center;
+	align-items: center;
+	border: 1px solid #c4c4c4;
+	box-shadow: none;
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	margin: 0;
+	min-width: 210px;
+	padding: 0;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__block_box__field-box {
+	padding: .1px;
+	position: relative;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_input {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: #8d8c8c;
+	font-family: inherit;
+	font-size: 14px;
+	height: 100%;
+	margin: 0;
+	padding: 10px 8.5px;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_input:-webkit-autofill,
+form.qform .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:active,
+form.qform .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:focus,
+form.qform .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:hover {
+	box-shadow: inset 0 0 0 30px #fff!important
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_input:active,
+form.qform .qform-row .qform-field__block_box__field-box_input:focus {
+	box-shadow: none;
+	outline: none
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_input::-webkit-input-placeholder {
+	color: #8a95ac
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_input::-moz-placeholder {
+	color: #8a95ac
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_input:-ms-input-placeholder {
+	color: #8a95ac
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_input::-ms-input-placeholder {
+	color: #8a95ac
+}
+
+form.qform .qform-row .qform-field__block_box__field-box_input::placeholder {
+	color: #8a95ac
+}
+
+form.qform .qform-row .qform-field__block_box__field.focus {
+	border-color: #0055c7!important
+}
+
+form.qform .qform-row .qform-field__block_box__field.focus:before {
+	background-color: #0055c7!important
+}
+
+form.qform .qform-row .qform-field__block_box__field:hover {
+	border-color: #2f80ed
+}
+
+form.qform .qform-row .qform-field__block_box__field.disabled,
+form.qform .qform-row .qform-field__block_box__field.disabled_input:disabled {
+	background: #e2e2e2;
+	border-color: #c4c4c4
+}
+
+form.qform .qform-row .qform-field__bottom-box {
+	display: none;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__bottom-box_shift {
+	box-sizing: border-box;
+	display: none;
+	margin-right: 10px;
+	width: 30%
+}
+
+form.qform .qform-row .qform-field__bottom-box_message {
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__bottom-box_message__hint {
+	color: #c4c4c4;
+	word-break: break-all
+}
+
+form.qform .qform-row .qform-field__bottom-box_message__error,
+form.qform .qform-row .qform-field__bottom-box_message__hint {
+	display: none;
+	font-family: Roboto !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	margin-top: 5px;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field__bottom-box_message__error {
+	color: #dfdfdf !important
+}
+
+form.qform.qform-background .qform-row .qform-field__block_box__field {
+	background-color: #ebf0fa;
+	border: none
+}
+
+form.qform.qform-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill,
+form.qform.qform-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:active,
+form.qform.qform-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:focus,
+form.qform.qform-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:hover {
+	box-shadow: inset 0 0 0 30px #ebf0fa!important
+}
+
+form.qform.qform-background .qform-row .qform-field__block_box.select .qform-field__block_box__input.background-icon:before {
+	border: none;
+	border-left: 1px solid #c4c4c4;
+	right: -20px;
+	top: 0
+}
+
+form.qform.qform-background .qform-row .qform-field__block.open .qform-field__block_box.select .qform-field__block_box__input.background-icon:before,
+form.qform.qform-background .qform-row .qform-field__block.open-gap .qform-field__block_box.select .qform-field__block_box__input.background-icon:before {
+	border-color: #c4c4c4
+}
+
+form.qform.qform-background .qform-row .qform-field__block.checkbox .qform-field__block_box__check,
+form.qform.qform-background .qform-row .qform-field__block.open .qform-field__block_box.select .qform-field__block_box_list,
+form.qform.qform-background .qform-row .qform-field__block.open-gap .qform-field__block_box.select .qform-field__block_box_list,
+form.qform.qform-background .qform-row .qform-field__block.radio .qform-field__block_box__check {
+	background-color: #ebf0fa;
+	border: none
+}
+
+form.qform.qform-default-background .qform-row .qform-field__block_box__field {
+	background-color: #ebf0fa
+}
+
+form.qform.qform-default-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill,
+form.qform.qform-default-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:active,
+form.qform.qform-default-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:focus,
+form.qform.qform-default-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:hover {
+	box-shadow: inset 0 0 0 30px #ebf0fa!important
+}
+
+form.qform.qform-default-background .qform-row .qform-field__block.checkbox .qform-field__block_box__check,
+form.qform.qform-default-background .qform-row .qform-field__block.open .qform-field__block_box.select .qform-field__block_box_list,
+form.qform.qform-default-background .qform-row .qform-field__block.open-gap .qform-field__block_box.select .qform-field__block_box_list,
+form.qform.qform-default-background .qform-row .qform-field__block.radio .qform-field__block_box__check {
+	background-color: #ebf0fa
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box__field {
+	border-left: 1px;
+	border-radius: 0;
+	border-width: 1px 1px medium;
+	border-right: 1px;
+	border-top: 1px
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box__field-box_input {
+	padding-left: 0
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box__field-box_label {
+	left: 0
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box__field .qform-field_att-in_left {
+	padding-left: 2.5px
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box__field .qform-field_att-in_right {
+	padding-right: 0
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box__field.disabled {
+	background: #fff;
+	border-color: #e2e2e2;
+	color: #e2e2e2
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box__field.disabled+.qform-field_label-inside {
+	color: #e2e2e2
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box.select .qform-field__block_box__input,
+form.qform.qform-underline .qform-row .qform-field__block_box.select .qform-field__block_box__input.background-icon {
+	border-left: 1px;
+	border-radius: 0;
+	border-width: 1px 1px medium;
+	border-right: 1px;
+	border-top: 1px;
+	padding-left: 0!important;
+	width: 100%
+}
+
+form.qform.qform-underline .qform-row .qform-field__block_box.select .qform-field__block_box__input:before {
+	border: none!important;
+	right: 0!important
+}
+
+form.qform.qform-underline .qform-row .qform-field__block.open .qform-field__block_box.select .qform-field__block_box__input.background-icon:before,
+form.qform.qform-underline .qform-row .qform-field__block.open-gap .qform-field__block_box.select .qform-field__block_box__input.background-icon:before,
+form.qform.qform-underline .qform-row .qform-field__block_box.select .qform-field__block_box__input.background-icon:before {
+	background-color: #ebf0fa
+}
+
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field {
+	background-color: #ebf0fa;
+	border-left: 1px;
+	border-radius: 0;
+	border-width: 1px 1px medium;
+	border-right: 1px;
+	border-top: 1px
+}
+
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill,
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:active,
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:focus,
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:hover {
+	box-shadow: inset 0 0 0 30px #ebf0fa!important
+}
+
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field.disabled {
+	background: #f9f9f9;
+	border-color: #e2e2e2
+}
+
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field.disabled+.qform-field__block_box__field-box .qform-field__block_box__field-box_label,
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field.disabled-box_input:disabled {
+	color: #e2e2e2
+}
+
+form.qform.qform-underline-background .qform-row .qform-field__block_box__field:hover:before {
+	background-color: #2f80ed
+}
+
+form.qform.qform-theme-black .qform-row .qform-field__block_box__field,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__block_box__field {
+	background-color: transparent;
+	border-color: silver
+}
+
+form.qform.qform-theme-black .qform-row .qform-field__block_box__field-box_input,
+form.qform.qform-theme-black .qform-row .qform-field__block_box__field-box_label,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__block_box__field-box_input,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__block_box__field-box_label {
+	color: #fff
+}
+
+form.qform.qform-theme-black .qform-row .qform-field__block_box__field-box_input:-webkit-autofill,
+form.qform.qform-theme-black .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:active,
+form.qform.qform-theme-black .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:focus,
+form.qform.qform-theme-black .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:hover,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__block_box__field-box_input:-webkit-autofill,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:active,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:focus,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__block_box__field-box_input:-webkit-autofill:hover {
+	-webkit-text-fill-color: #fff;
+	box-shadow: inset 0 0 0 30px transparent!important;
+	color: #fff
+}
+
+form.qform.qform-theme-black .qform-row .qform-field .qform-field-outside-label-box .qform-field-outside-label-box_label,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field .qform-field-outside-label-box .qform-field-outside-label-box_label {
+	color: #fff
+}
+
+form.qform.qform-focus_grey .qform-row .qform-field__block_box__field.focus {
+	border-color: silver!important
+}
+
+form.qform.qform-focus_grey .qform-row .qform-field__block_box__field.focus:before {
+	background-color: silver!important
+}
+
+form.qform.qform-hover_grey .qform-row .qform-field__block_box__field:hover {
+	border-color: silver
+}
+
+form.qform.qform-focus_blue .qform-row .qform-field__block_box__field.focus {
+	border-color: #0065ff!important
+}
+
+form.qform.qform-focus_blue .qform-row .qform-field__block_box__field.focus:before {
+	background-color: #0065ff!important
+}
+
+form.qform.qform-hover_blue .qform-row .qform-field__block_box__field:hover {
+	border-color: #0065ff
+}
+
+form.qform.qform-focus_dark-blue .qform-row .qform-field__block_box__field.focus {
+	border-color: #203448!important
+}
+
+form.qform.qform-focus_dark-blue .qform-row .qform-field__block_box__field.focus:before {
+	background-color: #203448!important
+}
+
+form.qform.qform-hover_dark-blue .qform-row .qform-field__block_box__field:hover {
+	border-color: #203448
+}
+
+form.qform.qform-focus_black .qform-row .qform-field__block_box__field.focus {
+	border-color: #212120!important
+}
+
+form.qform.qform-focus_black .qform-row .qform-field__block_box__field.focus:before {
+	background-color: #212120!important
+}
+
+form.qform.qform-hover_black .qform-row .qform-field__block_box__field:hover {
+	border-color: #212120
+}
+
+form.qform .qform-row .qform-field.textarea .qform-field__block_box__field-box {
+	height: auto
+}
+
+form.qform .qform-row .qform-field.textarea .qform-field__block_box__field-box_input {
+	resize: vertical
+}
+
+form.qform .qform-row .qform-field.time .qform-field__block_box__field-box_input {
+	cursor: pointer
+}
+
+form.qform .qform-row .qform-field.time .qform-field__block_box__field.open .qform-field__block_box_field-box__input,
+form.qform .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box_field-box__input {
+	border-color: #0055c7
+}
+
+form.qform .qform-row .qform-field.time .qform-field__block_box__field .qform-field__block_box__field__view {
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+	opacity: 0;
+	position: absolute;
+	width: 168px
+}
+
+form.qform .qform-row .qform-field.time .qform-field__block_box__field.open {
+	position: relative
+}
+
+form.qform .qform-row .qform-field.time .qform-field__block_box__field.open .qform-field__block_box__field__view {
+	border: 1px solid #c4c4c4;
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	display: block;
+	opacity: 1;
+	top: 52px;
+	z-index: 9999
+}
+
+form.qform .qform-row .qform-field.time .qform-field__block_box__field.open-gap {
+	position: relative
+}
+
+form.qform .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box__field__view {
+	box-shadow: 0 4px 20px rgba(11, 26, 33, .1);
+	display: block;
+	opacity: 1;
+	top: 62px;
+	z-index: 9999
+}
+
+form.qform .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box__field__view_pointer {
+	background: #fff;
+	display: block;
+	height: 10px;
+	left: 20px;
+	position: absolute;
+	top: -5px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	width: 10px
+}
+
+form.qform.qform-size-sm .qform-row .qform-field.datepickers .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-sm .qform-row .qform-field.datepickers .qform-field__block_box__field.open .qform-field__block_box__field__view,
+form.qform.qform-size-sm .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-sm .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field__view,
+form.qform.qform-size-sm .qform-row .qform-field.time .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-sm .qform-row .qform-field.time .qform-field__block_box__field.open .qform-field__block_box__field__view {
+	top: 42px
+}
+
+form.qform.qform-size-md .qform-row .qform-field.datepickers .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-md .qform-row .qform-field.datepickers .qform-field__block_box__field.open .qform-field__block_box__field__view,
+form.qform.qform-size-md .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-md .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field__view,
+form.qform.qform-size-md .qform-row .qform-field.time .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-md .qform-row .qform-field.time .qform-field__block_box__field.open .qform-field__block_box__field__view,
+form.qform.qform-size-sm .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-sm .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box__field__view,
+form.qform.qform-size-sm .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-sm .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field__view,
+form.qform.qform-size-sm .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-sm .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box__field__view {
+	top: 52px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field.datepickers .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-lg .qform-row .qform-field.datepickers .qform-field__block_box__field.open .qform-field__block_box__field__view,
+form.qform.qform-size-lg .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-lg .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field__view,
+form.qform.qform-size-lg .qform-row .qform-field.time .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform.qform-size-lg .qform-row .qform-field.time .qform-field__block_box__field.open .qform-field__block_box__field__view,
+form.qform.qform-size-md .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-md .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box__field__view,
+form.qform.qform-size-md .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-md .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field__view,
+form.qform.qform-size-md .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-md .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box__field__view {
+	top: 62px
+}
+
+form.qform.qform-size-lg .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-lg .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box__field__view,
+form.qform.qform-size-lg .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-lg .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field__view,
+form.qform.qform-size-lg .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list,
+form.qform.qform-size-lg .qform-row .qform-field.time .qform-field__block_box__field.open-gap .qform-field__block_box__field__view {
+	top: 72px
+}
+
+.times {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	max-height: 288px
+}
+
+.times__hours,
+.times__minutes {
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 5px;
+	margin-top: 30px;
+	position: relative;
+	width: 84px
+}
+
+.times__hours-title,
+.times__minutes-title {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	box-sizing: border-box;
+	color: #8b96ad;
+	content: "";
+	display: -ms-flexbox;
+	display: flex;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	justify-content: center;
+	line-height: 16px;
+	padding: 10px;
+	position: absolute;
+	top: -30px;
+	width: 100%
+}
+
+.times__hours-box::-webkit-scrollbar,
+.times__minutes-box::-webkit-scrollbar {
+	background: transparent;
+	width: 0
+}
+
+.times__hours-box,
+.times__minutes-box {
+	-ms-flex-pack: center;
+	-ms-overflow-style: none;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow-y: auto;
+	scrollbar-width: none;
+	width: 100%
+}
+
+.times__hours-box__item,
+.times__minutes-box__item {
+	box-sizing: content-box;
+	color: #666d70;
+	cursor: pointer;
+	font-family: Roboto\ 2 !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%
+}
+
+.times__hours-box__item.-selected-,
+.times__minutes-box__item.-selected- {
+	background: #0cc863;
+	border-radius: 5px;
+	color: #fff;
+	max-height: 30px;
+	max-width: 60px
+}
+
+.times__hours-box__item.-disabled-,
+.times__minutes-box__item.-disabled- {
+	color: #b8c1d1;
+	cursor: default
+}
+
+.times__hours {
+	border-right: 1px solid #b8c1d1
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field-box_input {
+	cursor: pointer
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field.open,
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap {
+	position: relative
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field.open .qform-field__block_box_field-box__input,
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box_field-box__input {
+	border-color: #0055c7
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view {
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+	opacity: 0;
+	position: absolute;
+	width: 313px
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-top {
+	-ms-flex-pack: justify;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-top .btn-title {
+	color: #3f444f;
+	cursor: pointer;
+	font-family: Roboto\ 2 !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 18px;
+	margin-right: 15px;
+	position: relative
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-top .btn-title:before {
+	background: none;
+	border: 2px solid #3f444f;
+	border-left: none;
+	border-top: none;
+	content: "";
+	display: block;
+	height: 6px;
+	position: absolute;
+	right: -15px;
+	top: 5px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 6px
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-top .btn-now {
+	background: #ebf0fa;
+	color: #3f444f;
+	cursor: pointer;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 14px;
+	padding: 4px 12px
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-bottom {
+	-ms-flex-pack: justify;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 30px 25px
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-bottom .btn-next,
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-bottom .btn-prev {
+	background: none;
+	border: 2px solid #3f444f;
+	border-left: none;
+	border-top: none;
+	cursor: pointer;
+	height: 6px;
+	width: 6px
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-bottom .btn-prev {
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg)
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field .qform-field__block_box__field__view_nav-bottom .btn-next {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field.open .qform-field__block_box__field__view {
+	border: 1px solid #c4c4c4;
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	display: block;
+	opacity: 1;
+	z-index: 9999
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box__field__view {
+	box-shadow: 0 4px 20px rgba(11, 26, 33, .1);
+	display: block;
+	opacity: 1;
+	top: 50px;
+	z-index: 9999
+}
+
+form.qform .qform-row .qform-field.datepickers .qform-field__block_box__field.open-gap .qform-field__block_box__field__view_pointer {
+	background: #fff;
+	display: block;
+	height: 10px;
+	left: 20px;
+	position: absolute;
+	top: -5px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	width: 10px
+}
+
+.field-datepicker {
+	position: relative
+}
+
+.field-datepicker__box {
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+	opacity: 0;
+	position: absolute;
+	width: 313px
+}
+
+.field-datepicker__nav-top {
+	-ms-flex-pack: justify;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	padding: 25px
+}
+
+.field-datepicker__nav-top .btn-title {
+	color: #3f444f;
+	cursor: pointer;
+	font-family: Roboto\ 2 !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 18px;
+	margin-right: 15px;
+	position: relative
+}
+
+.field-datepicker__nav-top .btn-title:before {
+	background: none;
+	border: 2px solid #3f444f;
+	border-left: none;
+	border-top: none;
+	content: "";
+	display: block;
+	height: 6px;
+	position: absolute;
+	right: -15px;
+	top: 5px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 6px
+}
+
+.field-datepicker__nav-top .btn-now {
+	background: #ebf0fa;
+	color: #3f444f;
+	cursor: pointer;
+	font-family: Roboto\  2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 14px;
+	padding: 4px 12px
+}
+
+.field-datepicker__nav-bottom {
+	-ms-flex-pack: justify;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 30px 25px
+}
+
+.field-datepicker__nav-bottom .btn-next,
+.field-datepicker__nav-bottom .btn-prev {
+	background: none;
+	border: 2px solid #3f444f;
+	border-left: none;
+	border-top: none;
+	cursor: pointer;
+	height: 6px;
+	width: 6px
+}
+
+.field-datepicker__nav-bottom .btn-prev {
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg)
+}
+
+.field-datepicker__nav-bottom .btn-next {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+.datepicker__body {
+	display: none
+}
+
+.datepicker__body.active {
+	display: block
+}
+
+.datepicker__days-names {
+	-ms-flex-pack: justify;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 15px 10px
+}
+
+.datepicker__day-name {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #8a95ac;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex: 1;
+	flex: 1;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	justify-content: center;
+	line-height: 17px;
+	text-align: center;
+	text-transform: uppercase
+}
+
+.datepicker__cells-days,
+.datepicker__cells-months,
+.datepicker__cells-years {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 15px 10px
+}
+
+.datepicker__cells-months,
+.datepicker__cells-years {
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.datepicker__cell-day {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #3f444f;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: Roboto\ 2 !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	height: 40px;
+	justify-content: center;
+	line-height: 16px;
+	width: 40px
+}
+
+.datepicker__cell-day:hover {
+	background: #ebf0fa;
+	border-radius: 50%
+}
+
+.datepicker__cell-day.-other-month- {
+	color: #b8c1d1
+}
+
+.datepicker__cell-day.-selected- {
+	background: #0cc863;
+	border-radius: 50%;
+	color: #fff
+}
+
+.datepicker__cell-day.-disabled- {
+	color: #b8c1d1;
+	cursor: default
+}
+
+.datepicker__cell-day.-disabled-:hover {
+	background: none
+}
+
+.datepicker__cell-month,
+.datepicker__cell-year {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-radius: 5px;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: Roboto\ 2 !important;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	height: 48px;
+	justify-content: center;
+	line-height: 20px;
+	margin: 5px;
+	text-transform: lowercase;
+	width: 68px
+}
+
+.datepicker__cell-month:hover,
+.datepicker__cell-year:hover {
+	background: #ebf0fa
+}
+
+.datepicker__cell-month.-selected-,
+.datepicker__cell-year.-selected- {
+	background: #0cc863;
+	color: #fff
+}
+
+.datepicker__cell-month.-disabled-,
+.datepicker__cell-year.-disabled- {
+	color: #b8c1d1;
+	cursor: default
+}
+
+.datepicker__cell-month.-disabled-:hover,
+.datepicker__cell-year.-disabled-:hover {
+	background: none
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box {
+	position: unset
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_input {
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: inherit;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	margin: 0;
+	min-width: 210px;
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_input-text {
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	color: #8d8c8c;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: inherit;
+	font-size: 14px;
+	height: 100%;
+	outline: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_input-icon {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.068 6.022 7 11 1' stroke='%23B8C1D1' stroke-miterlimit='10' stroke-linecap='round'/%3E%3C/svg%3E");
+	background-position: 18px;
+	background-repeat: no-repeat;
+	border-left: none;
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	width: 40px
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_input.background-icon .qform-field__block_box__field-box_input-icon {
+	border-left: 1px solid #c4c4c4
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_input.background-icon:hover .qform-field__block_box__field-box_input-icon {
+	border-color: #2f80ed
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_list {
+	background-color: #fff;
+	box-sizing: border-box;
+	content: "";
+	height: auto;
+	left: 0;
+	max-height: 200px;
+	min-height: 50px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: top;
+	transform-origin: top;
+	transition: -webkit-transform .4s ease;
+	transition: transform .4s ease;
+	transition: transform .4s ease, -webkit-transform .4s ease;
+	width: 100%;
+	z-index: -1
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_list_list-box {
+	height: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_list__item {
+	-ms-flex-pack: start;
+	-ms-flex-align: center;
+	align-items: center;
+	border-bottom: 1px solid #c4c4c4;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-start;
+	min-height: 40px;
+	padding: 0 20px;
+	word-break: break-all
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_list__item:last-child {
+	border-bottom: none
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field-box_list__item:hover {
+	border-color: #2f80ed
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open,
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open-gap {
+	border-color: #0055c7;
+	position: relative
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_list,
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list {
+	border: 1px solid #c4c4c4;
+	border-top: none;
+	height: auto;
+	max-height: 200px;
+	min-height: 50px;
+	opacity: 1;
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+	z-index: 5
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_list-box,
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list-box {
+	height: auto;
+	max-height: 200px;
+	overflow-y: auto;
+	scrollbar-color: #0cc863 rgba(12, 200, 99, .28);
+	scrollbar-width: thin
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_list-box::-webkit-scrollbar,
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list-box::-webkit-scrollbar {
+	width: 4px
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_list-box::-webkit-scrollbar-thumb,
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list-box::-webkit-scrollbar-thumb {
+	background-color: #0cc863;
+	border-radius: 20px
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_list-box::-webkit-scrollbar-track,
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list-box::-webkit-scrollbar-track {
+	background: rgba(12, 200, 99, .28)
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open .qform-field__block_box__field-box_input.background-icon .qform-field__block_box__field-box_input-icon,
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_input.background-icon .qform-field__block_box__field-box_input-icon {
+	border-color: #0055c7
+}
+
+form.qform .qform-row .qform-field.select .qform-field__block_box__field.open-gap .qform-field__block_box__field-box_list {
+	border: 1px solid #c4c4c4
+}
+
+.qform-row .qform-field__textblock {
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0
+}
+
+.qform-row .qform-field__textblock_label {
+	color: #3f444f;
+	cursor: default;
+	display: block;
+	font-family: inherit;
+	font-weight: 600;
+	margin: 0 0 15px
+}
+
+.qform-row .qform-field__textblock_text {
+	min-width: 210px;
+	width: 100%
+}
+
+form.qform.qform-theme-black .qform-row .qform-field__textblock_label,
+form.qform.qform-theme-black .qform-row .qform-field__textblock_text {
+	color: #fff
+}
+
+.qform-field.file .qform-field__block {
+	-ms-flex-align: center;
+	align-items: center;
+	border: none;
+	border-radius: 0;
+	display: -ms-flexbox;
+	display: flex;
+	height: auto;
+	margin: 0;
+	padding: 0
+}
+
+.qform-field.file .qform-field__block_box__field {
+	background-color: inherit;
+	border: none!important;
+	border-radius: 0;
+	height: auto;
+	margin: 0;
+	padding: 0
+}
+
+.qform-field.file .qform-field__block_box__field-box {
+	height: auto
+}
+
+.qform-field.file .qform-field__block_box__field-box__file {
+	border-top: none;
+	height: auto;
+	min-height: 50px;
+	opacity: 1;
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+	width: 100%;
+	z-index: 5
+}
+
+.qform-field.file .qform-field__block_box__field-box__dropzone {
+	box-sizing: border-box;
+	cursor: pointer
+}
+
+.qform-field.file .qform-field__block_box__field-box__dropzone.area {
+	background-color: #fff;
+	border: 1px dashed #d4d4d4;
+	color: #959594;
+	display: block;
+	font-weight: 400;
+	padding: 50px 30px;
+	text-align: center;
+	transition: .3s;
+	width: 100%
+}
+
+.qform-field.file .qform-field__block_box__field-box__dropzone.area.light,
+.qform-field.file .qform-field__block_box__field-box__dropzone.area:hover {
+	background-color: #eaeaea;
+	border-color: #bbb
+}
+
+.qform-field.file .qform-field__block_box__field-box__dropzone.button {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #212120;
+	color: #fff;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	height: 50px;
+	justify-content: center;
+	padding: 11px 30px
+}
+
+.qform-field.file .qform-field__block_box__field-box__dropzone.button:before {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 477.875 477.875'%3E%3Cpath fill='%23fff' d='M329.622 142.691c6.517-6.517 6.517-17.283 0-24.083-6.517-6.517-17.283-6.517-24.083 0L127.322 296.825c-21.25 21.25-21.25 56.1 0 77.35s56.1 21.25 77.35 0l186.717-186.717c1.7-.85 3.4-1.983 5.1-3.4 24.933-24.933 91.233-91.233 27.483-154.983-24.367-24.367-53.55-33.717-84.433-26.917-25.217 5.383-51.283 21.533-77.35 47.6l-202.3 202.3c-24.083 24.083-36.833 57.517-35.417 94.067 1.417 34.85 15.867 68.85 39.95 92.933s57.517 37.967 92.083 38.817h2.833c34.567 0 66.3-13.033 89.817-36.55l199.467-199.467c6.517-6.517 6.517-17.283 0-24.083-6.517-6.517-17.283-6.517-24.083 0L225.072 417.241c-17.567 17.567-41.65 26.917-68 26.633-25.783-.567-50.717-11.05-68.567-28.9-38.25-38.25-40.233-103.133-4.533-138.833l202.3-202.3c20.967-20.967 41.933-34.283 60.35-38.25 19.55-4.25 37.117 1.417 53.267 17.85 15.867 15.867 20.4 30.6 14.733 48.45-3.967 12.75-13.033 26.917-28.333 43.917-1.133.85-2.55 1.7-3.4 2.55L180.872 350.375c-7.933 7.933-21.25 7.933-29.183 0s-7.933-21.25 0-29.183l177.933-178.501z'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-size: 100%;
+	content: "";
+	display: inline-block;
+	height: 15px;
+	margin-right: 5px;
+	vertical-align: middle;
+	width: 15px
+}
+
+.qform-field.file .qform-field__block_box__field-box__dropzone.button .dropzone_placeholder {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.qform-field.file .qform-field__block_box__field-box__input {
+	display: none
+}
+
+.qform-field.file .qform-field__block_box {
+	min-width: 210px;
+	width: 100%
+}
+
+.qform-field.file .qform-field__block_box__dropzone {
+	box-sizing: border-box;
+	cursor: pointer
+}
+
+form.qform.qform-theme-black .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone {
+	background-color: transparent;
+	border: 1px solid silver;
+	color: #fff
+}
+
+form.qform.qform-theme-black .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone.dropzone,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.file .qform-field__block_box__field-box__dropzone.dropzone {
+	border: 1px dashed silver
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .info-bar {
+	-ms-flex-pack: justify;
+	-ms-flex-align: center;
+	align-items: center;
+	border-bottom: 1px solid #ebf0fa;
+	display: -ms-flexbox;
+	display: flex;
+	height: 40px;
+	justify-content: space-between;
+	margin-bottom: 18px;
+	margin-top: 10px;
+	max-width: 330px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .info-bar .size-files-box .size-files {
+	color: #8a95ac;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	line-height: 16px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .info-bar .size-files-box span {
+	color: #3f444f;
+	font-weight: 400
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .info-bar .clear-btn {
+	background: #ebf0fa;
+	border: none;
+	color: #3f444f;
+	cursor: pointer;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-weight: 700;
+	height: 25px;
+	line-height: 14px;
+	outline: none;
+	width: 80px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list {
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	max-width: 345px;
+	padding: 0
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart {
+	-ms-flex-align: center;
+	align-items: center;
+	background: #ebf0fa;
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 54px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	padding: 5px;
+	position: relative;
+	width: 100px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart .file-list__img {
+	display: none
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart .file-list__name {
+	color: #3f444f;
+	display: inline-block;
+	font-family: Roboto\ 2 !important;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 12px;
+	max-height: 35px;
+	max-width: 60px;
+	overflow: hidden
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart .file-list__ext {
+	background: #b8c1d1;
+	bottom: 5px;
+	color: #3f444f;
+	font-family: Roboto\ 2 !important;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 12px;
+	padding: 2px 5px;
+	position: absolute;
+	right: 5px;
+	text-transform: uppercase
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart .file-list__loader {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: rgba(63, 68, 79, .7);
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart .file-list__loader:before {
+	-webkit-animation: spin .75s ease-in-out infinite;
+	animation: spin .75s ease-in-out infinite;
+	background: #ebf0fa;
+	border: 3px solid #0cc863;
+	border-left-color: #b8c1d1;
+	border-radius: 50%;
+	box-sizing: border-box;
+	content: "";
+	display: block;
+	height: 30px;
+	width: 30px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart .file-list__loader:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%23171725' d='M6 4.667 10.667 0 12 1.333 7.333 6 12 10.667 10.667 12 6 7.333 1.333 12 0 10.667 4.667 6 0 1.333 1.333 0 6 4.667Z'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-size: cover;
+	content: "";
+	display: block;
+	height: 12px;
+	position: absolute;
+	width: 12px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart .file-list__close {
+	background: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 14px;
+	opacity: 0;
+	position: absolute;
+	right: -7.5px;
+	top: -7.5px;
+	transition: .2s;
+	width: 14px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart .file-list__close:before {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23990200' d='M8 15.5a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Zm0-8.56L5.879 4.817 4.818 5.879 6.94 8l-2.122 2.121 1.061 1.061L8 9.06l2.121 2.122 1.061-1.061L9.06 8l2.122-2.121-1.061-1.061L8 6.94Z'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-size: cover;
+	content: "";
+	display: block;
+	height: 16px;
+	left: -1px;
+	position: absolute;
+	top: -1px;
+	transition: .2s;
+	width: 16px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart:hover {
+	cursor: pointer
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-cart:hover>.file-list__close {
+	opacity: 1
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack {
+	-ms-flex-align: center;
+	align-items: center;
+	border-bottom: 1px solid #ebf0fa;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 330px;
+	position: relative;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack .file-list__img {
+	background: rgba(63, 68, 79, .7);
+	border-radius: 5px;
+	display: block;
+	height: 40px;
+	margin-bottom: 8px;
+	margin-right: 10px;
+	margin-top: 8px;
+	width: 40px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack .file-list__img img {
+	border: none;
+	border-radius: 5px;
+	box-shadow: none;
+	height: 40px;
+	max-width: unset;
+	padding: 0;
+	width: 40px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack .file-list__name {
+	color: #3f444f;
+	font-family: Roboto\ 2;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	overflow: hidden;
+	padding-right: 5px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack .file-list__ext {
+	color: #8a95ac;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack .file-list__loader {
+	-ms-flex-pack: left;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	justify-content: left;
+	left: 0;
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+	width: 25px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack .file-list__loader:before {
+	-ms-flex-negative: 0;
+	-webkit-animation: spin .75s ease-in-out infinite;
+	animation: spin .75s ease-in-out infinite;
+	background: none;
+	border: 3px solid #0cc863;
+	border-left-color: #b8c1d1;
+	border-radius: 50%;
+	box-sizing: border-box;
+	content: "";
+	display: -ms-flexbox;
+	display: flex;
+	flex-shrink: 0;
+	height: 20px;
+	width: 20px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack .file-list__loader:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%23fff' d='M6 4.667 10.667 0 12 1.333 7.333 6 12 10.667 10.667 12 6 7.333 1.333 12 0 10.667 4.667 6 0 1.333 1.333 0 6 4.667Z'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-size: cover;
+	content: "";
+	display: block;
+	height: 8px;
+	left: 15.5px;
+	position: absolute;
+	width: 8px
+}
+
+form.qform .qform-row .qform-field.file .qform-field__block_box__field-box__view .file-list .file-item-stack .file-list__close {
+	-ms-flex-negative: 0;
+	background: #ebf0fa;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%23171725' d='M6 4.667 10.667 0 12 1.333 7.333 6 12 10.667 10.667 12 6 7.333 1.333 12 0 10.667 4.667 6 0 1.333 1.333 0 6 4.667Z'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-size: cover;
+	border: 4.5px solid #ebf0fa;
+	border-radius: 50%;
+	box-sizing: border-box;
+	cursor: pointer;
+	flex-shrink: 0;
+	height: 20px;
+	width: 20px
+}
+
+@-webkit-keyframes spin {
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+
+@keyframes spin {
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+
+.qform-field.checkbox .qform-field__block_box__field,
+.qform-field.radio .qform-field__block_box__field,
+form.qform .qform-field.checkbox .qform-field__block_box__field,
+form.qform .qform-field.radio .qform-field__block_box__field {
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: inherit;
+	border: none;
+	border-radius: 0;
+	display: -ms-flexbox;
+	display: flex;
+	height: auto;
+	margin: 0;
+	padding: 0
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box,
+.qform-field.radio .qform-field__block_box__field-box,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box,
+form.qform .qform-field.radio .qform-field__block_box__field-box {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: auto;
+	margin-bottom: -20px;
+	padding-bottom: 20px
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box label,
+.qform-field.radio .qform-field__block_box__field-box label,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box label,
+form.qform .qform-field.radio .qform-field__block_box__field-box label {
+	-ms-flex-align: center;
+	align-items: center;
+	color: #3e444f;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	margin-bottom: 20px
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__input,
+.qform-field.radio .qform-field__block_box__field-box__input,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__input,
+form.qform .qform-field.radio .qform-field__block_box__field-box__input {
+	display: none
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__label,
+.qform-field.radio .qform-field__block_box__field-box__label,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__label,
+form.qform .qform-field.radio .qform-field__block_box__field-box__label {
+	-ms-flex-preferred-size: auto;
+	flex-basis: auto;
+	word-break: break-all
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__label_img,
+.qform-field.radio .qform-field__block_box__field-box__label_img,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__label_img,
+form.qform .qform-field.radio .qform-field__block_box__field-box__label_img {
+	box-align: center;
+	-ms-flex-align: center;
+	-ms-flex-item-align: start;
+	align-items: center;
+	align-self: flex-start;
+	border: 1px solid #c4c4c4;
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 280px;
+	line-height: 280px;
+	outline-width: 0;
+	padding: 9px;
+	width: 280px
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__label_img img,
+.qform-field.radio .qform-field__block_box__field-box__label_img img,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__label_img img,
+form.qform .qform-field.radio .qform-field__block_box__field-box__label_img img {
+	box-sizing: border-box;
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+	min-height: 0;
+	min-width: 0;
+	vertical-align: middle
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__check,
+.qform-field.radio .qform-field__block_box__field-box__check,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__check,
+form.qform .qform-field.radio .qform-field__block_box__field-box__check {
+	-ms-flex-negative: 0;
+	border: 1px solid #c4c4c4;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	height: 25px;
+	margin: 0 10px;
+	position: relative;
+	width: 25px
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__check:after,
+.qform-field.radio .qform-field__block_box__field-box__check:after,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform .qform-field.radio .qform-field__block_box__field-box__check:after {
+	content: "";
+	display: block;
+	height: 8px;
+	left: 7px;
+	opacity: 0;
+	position: absolute;
+	top: 7px;
+	transition: .2s ease-out;
+	width: 10px
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__check,
+.qform-field.radio .qform-field__block_box__field-box__check,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__check,
+form.qform .qform-field.radio .qform-field__block_box__field-box__check {
+	border-radius: 50%
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__check:after,
+.qform-field.radio .qform-field__block_box__field-box__check:after,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform .qform-field.radio .qform-field__block_box__field-box__check:after {
+	background-color: #171725;
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 9px;
+	width: 9px
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box input[type=radio]:checked+label>.qform-field__block_box__field-box__check:after,
+.qform-field.radio .qform-field__block_box__field-box input[type=radio]:checked+label>.qform-field__block_box__field-box__check:after,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box input[type=radio]:checked+label>.qform-field__block_box__field-box__check:after,
+form.qform .qform-field.radio .qform-field__block_box__field-box input[type=radio]:checked+label>.qform-field__block_box__field-box__check:after {
+	opacity: 1
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box input[type=radio]:disabled+label>.qform-field__block_box__field-box__label,
+.qform-field.radio .qform-field__block_box__field-box input[type=radio]:disabled+label>.qform-field__block_box__field-box__label,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box input[type=radio]:disabled+label>.qform-field__block_box__field-box__label,
+form.qform .qform-field.radio .qform-field__block_box__field-box input[type=radio]:disabled+label>.qform-field__block_box__field-box__label {
+	color: #dfdfdf;
+	cursor: default
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box input[type=radio]:disabled+label>.qform-field__block_box__field-box__label:before,
+.qform-field.radio .qform-field__block_box__field-box input[type=radio]:disabled+label>.qform-field__block_box__field-box__label:before,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box input[type=radio]:disabled+label>.qform-field__block_box__field-box__label:before,
+form.qform .qform-field.radio .qform-field__block_box__field-box input[type=radio]:disabled+label>.qform-field__block_box__field-box__label:before {
+	border-color: #eaeaea
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__check,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__check,
+form.qform .qform-field.radio .qform-field__block_box__field-box__check {
+	-ms-flex-negative: 0;
+	border: 1px solid #c4c4c4;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	height: 25px;
+	margin: 0 10px;
+	position: relative;
+	width: 25px
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform .qform-field.radio .qform-field__block_box__field-box__check:after {
+	background-color: transparent;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 45.701 45.7'%3E%3Cpath fill='%23171725' d='M20.687 38.332a5.308 5.308 0 0 1-7.505 0L1.554 26.704A5.306 5.306 0 1 1 9.059 19.2l6.928 6.927a1.344 1.344 0 0 0 1.896 0L36.642 7.368a5.308 5.308 0 0 1 7.505 7.504l-23.46 23.46z'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-size: 100%;
+	content: "";
+	display: block;
+	height: 8px;
+	left: 7px;
+	opacity: 0;
+	position: absolute;
+	top: 7px;
+	transition: .2s ease-out;
+	width: 10px
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box input[type=checkbox]:checked+label>.qform-field__block_box__field-box__check:after,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box input[type=checkbox]:checked+label>.qform-field__block_box__field-box__check:after,
+form.qform .qform-field.radio .qform-field__block_box__field-box input[type=checkbox]:checked+label>.qform-field__block_box__field-box__check:after {
+	opacity: 1
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box input[type=checkbox]:disabled+label>.qform-field__block_box__field-box__label,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box input[type=checkbox]:disabled+label>.qform-field__block_box__field-box__label,
+form.qform .qform-field.radio .qform-field__block_box__field-box input[type=checkbox]:disabled+label>.qform-field__block_box__field-box__label {
+	color: #dfdfdf;
+	cursor: default
+}
+
+.qform-field.checkbox .qform-field__block_box__field-box input[type=checkbox]:disabled+label>.qform-field__block_box__field-box__label:before,
+form.qform .qform-field.checkbox .qform-field__block_box__field-box input[type=checkbox]:disabled+label>.qform-field__block_box__field-box__label:before,
+form.qform .qform-field.radio .qform-field__block_box__field-box input[type=checkbox]:disabled+label>.qform-field__block_box__field-box__label:before {
+	border-color: #eaeaea
+}
+
+form.qform .qform-field.checkbox .qform-field__block_box__field-box__check {
+	border-radius: 0
+}
+
+form.qform .qform-field.radio .qform-field__block_box__field-box__check {
+	border-radius: 50%
+}
+
+.qform-label_inside_hide .qform-row .qform-field.checkbox .qform-field__block_box__field,
+.qform-label_inside_hide .qform-row .qform-field.file .qform-field__block_box__field,
+.qform-label_inside_hide .qform-row .qform-field.radio .qform-field__block_box__field,
+.qform-label_inside_hide .qform-row .qform-field.select .qform-field__block_box__field,
+.qform-label_inside_show .qform-row .qform-field.checkbox .qform-field__block_box__field,
+.qform-label_inside_show .qform-row .qform-field.file .qform-field__block_box__field,
+.qform-label_inside_show .qform-row .qform-field.radio .qform-field__block_box__field,
+.qform-label_inside_show .qform-row .qform-field.select .qform-field__block_box__field {
+	border: none
+}
+
+.qform-label_inside_hide .qform-row .qform-field.checkbox .qform-field-outside-label-box,
+.qform-label_inside_hide .qform-row .qform-field.file .qform-field-outside-label-box,
+.qform-label_inside_hide .qform-row .qform-field.radio .qform-field-outside-label-box,
+.qform-label_inside_hide .qform-row .qform-field.select .qform-field-outside-label-box,
+.qform-label_inside_show .qform-row .qform-field.checkbox .qform-field-outside-label-box,
+.qform-label_inside_show .qform-row .qform-field.file .qform-field-outside-label-box,
+.qform-label_inside_show .qform-row .qform-field.radio .qform-field-outside-label-box,
+.qform-label_inside_show .qform-row .qform-field.select .qform-field-outside-label-box,
+form.qform.qform-hint_inside-left .qform-row .qform-field.checkbox.hint .qform-field__bottom-box,
+form.qform.qform-hint_inside-left .qform-row .qform-field.file.hint .qform-field__bottom-box,
+form.qform.qform-hint_inside-left .qform-row .qform-field.radio.hint .qform-field__bottom-box,
+form.qform.qform-hint_inside-right .qform-row .qform-field.checkbox.hint .qform-field__bottom-box,
+form.qform.qform-hint_inside-right .qform-row .qform-field.file.hint .qform-field__bottom-box,
+form.qform.qform-hint_inside-right .qform-row .qform-field.radio.hint .qform-field__bottom-box,
+form.qform.qform-hint_outside-left .qform-row .qform-field.checkbox.hint .qform-field__bottom-box,
+form.qform.qform-hint_outside-left .qform-row .qform-field.file.hint .qform-field__bottom-box,
+form.qform.qform-hint_outside-left .qform-row .qform-field.radio.hint .qform-field__bottom-box,
+form.qform.qform-hint_outside-right .qform-row .qform-field.checkbox.hint .qform-field__bottom-box,
+form.qform.qform-hint_outside-right .qform-row .qform-field.file.hint .qform-field__bottom-box,
+form.qform.qform-hint_outside-right .qform-row .qform-field.radio.hint .qform-field__bottom-box {
+	display: -ms-flexbox;
+	display: flex
+}
+
+form.qform.qform-hint_inside-left .qform-row .qform-field.checkbox.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_inside-left .qform-row .qform-field.file.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_inside-left .qform-row .qform-field.radio.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_inside-right .qform-row .qform-field.checkbox.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_inside-right .qform-row .qform-field.file.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_inside-right .qform-row .qform-field.radio.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_outside-left .qform-row .qform-field.checkbox.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_outside-left .qform-row .qform-field.file.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_outside-left .qform-row .qform-field.radio.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_outside-right .qform-row .qform-field.checkbox.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_outside-right .qform-row .qform-field.file.hint .qform-field__bottom-box_message__hint,
+form.qform.qform-hint_outside-right .qform-row .qform-field.radio.hint .qform-field__bottom-box_message__hint {
+	display: block
+}
+
+form.qform.qform-theme-black .qform-row .qform-field.checkbox .qform-field__block_box__field,
+form.qform.qform-theme-black .qform-row .qform-field.radio .qform-field__block_box__field,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.checkbox .qform-field__block_box__field,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.radio .qform-field__block_box__field {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+form.qform.qform-theme-black .qform-row .qform-field.checkbox .qform-field__block_box__field-box label,
+form.qform.qform-theme-black .qform-row .qform-field.radio .qform-field__block_box__field-box label,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.checkbox .qform-field__block_box__field-box label,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.radio .qform-field__block_box__field-box label {
+	color: #fff
+}
+
+form.qform.qform-theme-black .qform-row .qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform.qform-theme-black .qform-row .qform-field.radio .qform-field__block_box__field-box__check:after,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.radio .qform-field__block_box__field-box__check:after {
+	background-color: #fff
+}
+
+form.qform.qform-theme-black .qform-row .qform-field.checkbox .qform-field__block_box__field-box__check:after,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field.checkbox .qform-field__block_box__field-box__check:after {
+	background-color: transparent;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 45.701 45.7'%3E%3Cpath fill='%23fff' d='M20.687 38.332a5.308 5.308 0 0 1-7.505 0L1.554 26.704A5.306 5.306 0 1 1 9.059 19.2l6.928 6.927a1.344 1.344 0 0 0 1.896 0L36.642 7.368a5.308 5.308 0 0 1 7.505 7.504l-23.46 23.46z'/%3E%3C/svg%3E")
+}
+
+form.qform .qform-row .qform-field.checkbox.right .qform-field__block_box__field-box label,
+form.qform .qform-row .qform-field.radio.right .qform-field__block_box__field-box label {
+	-ms-flex-pack: end;
+	justify-content: flex-end
+}
+
+form.qform .qform-row .qform-field.checkbox.left .qform-field__block_box__field-box label,
+form.qform .qform-row .qform-field.radio.left .qform-field__block_box__field-box label {
+	padding-left: 0
+}
+
+form.qform .qform-row .qform-field.checkbox.left .qform-field__block_box__field-box label .qform-field__block_box__field-box__label,
+form.qform .qform-row .qform-field.radio.left .qform-field__block_box__field-box label .qform-field__block_box__field-box__label {
+	-ms-flex-order: 2;
+	order: 2
+}
+
+form.qform .qform-row .qform-field.checkbox.left .qform-field__block_box__field-box label .qform-field__block_box__field-box__check,
+form.qform .qform-row .qform-field.radio.left .qform-field__block_box__field-box label .qform-field__block_box__field-box__check {
+	margin-left: 0
+}
+
+form.qform .qform-row .qform-field.checkbox.top .qform-field__block_box__field-box label,
+form.qform .qform-row .qform-field.radio.top .qform-field__block_box__field-box label {
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+
+form.qform .qform-row .qform-field.checkbox.top .qform-field__block_box__field-box label .qform-field__block_box__field-box__label,
+form.qform .qform-row .qform-field.radio.top .qform-field__block_box__field-box label .qform-field__block_box__field-box__label {
+	-ms-flex-order: 2;
+	order: 2;
+	text-align: center
+}
+
+form.qform .qform-row .qform-field.checkbox.top .qform-field__block_box__field-box label .qform-field__block_box__field-box__check,
+form.qform .qform-row .qform-field.radio.top .qform-field__block_box__field-box label .qform-field__block_box__field-box__check {
+	margin: 10px 0
+}
+
+form.qform .qform-row .qform-field.checkbox.bottom .qform-field__block_box__field-box label,
+form.qform .qform-row .qform-field.radio.bottom .qform-field__block_box__field-box label {
+	-ms-flex-pack: end;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: flex-end
+}
+
+form.qform .qform-row .qform-field.checkbox.bottom .qform-field__block_box__field-box label .qform-field__block_box__field-box__label,
+form.qform .qform-row .qform-field.radio.bottom .qform-field__block_box__field-box label .qform-field__block_box__field-box__label {
+	text-align: center
+}
+
+form.qform .qform-row .qform-field.checkbox.bottom .qform-field__block_box__field-box label .qform-field__block_box__field-box__check,
+form.qform .qform-row .qform-field.radio.bottom .qform-field__block_box__field-box label .qform-field__block_box__field-box__check {
+	margin: 10px 0
+}
+
+form.qform .qform-row .qform-field.checkbox.horizontal .qform-field__block_box__field-box,
+form.qform .qform-row .qform-field.radio.horizontal .qform-field__block_box__field-box {
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	max-width: 100%
+}
+
+form.qform .qform-row .qform-field.checkbox.horizontal .qform-field__block_box__field-box label,
+form.qform .qform-row .qform-field.radio.horizontal .qform-field__block_box__field-box label {
+	padding: 0 15px
+}
+
+form.qform .qform-row .qform-field.checkbox.horizontal .qform-field__block_box__field-box label:nth-child(2),
+form.qform .qform-row .qform-field.radio.horizontal .qform-field__block_box__field-box label:nth-child(2) {
+	padding-left: 0
+}
+
+form.qform .qform-row .qform-field.checkbox.horizontal .qform-field__block_box__field-box label:last-child,
+form.qform .qform-row .qform-field.radio.horizontal .qform-field__block_box__field-box label:last-child {
+	padding-right: 0
+}
+
+.qform-field__submit {
+	text-align: center;
+	float: left;
+}
+
+.qform-field__submit_label {
+	color: #3f444f;
+	font-family: inherit;
+	font-weight: 600
+}
+
+.qform-field__submit .submit-box {
+	display: inline-block;
+	position: relative
+}
+
+.qform-field__submit .submit-box:before {
+	background-color: #fff;
+	content: "";
+	display: block;
+	height: 2px;
+	opacity: 0;
+	position: absolute;
+	right: 23px;
+	top: calc(50% - 1px);
+	transition: .4s;
+	width: 0
+}
+
+.qform-field__submit .submit-box:after {
+	background-color: transparent;
+	border-right: 2px solid #fff;
+	border-top: 2px solid #fff;
+	box-sizing: content-box;
+	content: "";
+	display: block;
+	height: 4px;
+	opacity: 0;
+	position: absolute;
+	right: 23px;
+	top: calc(50% - 3px);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	transition: .6s;
+	width: 4px
+}
+
+.qform-field__submit__input {
+	background-color: #fff !important;
+	border: none;
+	box-sizing: border-box;
+	color: #000 !important;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	height: 50px;
+	min-width: 180px;
+	outline: none;
+	padding: 10px 20px;
+	transition: .4s
+}
+
+.qform-field__submit input[type=submit]:disabled {
+	background-color: #f6f6f6;
+	color: #dfe0e1;
+	cursor: default
+}
+
+.qform-field__submit_agree-box {
+	margin-bottom: 30px;
+	text-align: left
+}
+
+.qform-field__submit_agree-box__error-box {
+	display: none;
+	margin: 10px 0
+}
+
+.qform-field__submit_agree-box__error-box_message {
+	color: #c80c0c;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+	margin-top: 5px;
+	width: 100%
+}
+
+.qform-field__submit_agree-box__error-box.error {
+	display: block
+}
+
+.qform-field__submit_agree-box__input {
+	display: none
+}
+
+.qform-field__submit_agree-box label {
+	cursor: pointer;
+	display: block;
+	margin-bottom: 10px;
+	padding-left: 34px;
+	position: relative
+}
+
+.qform-field__submit_agree-box label:before {
+	border: 1px solid silver;
+	bottom: 0;
+	box-sizing: border-box;
+	content: "";
+	height: 25px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	width: 25px
+}
+
+.qform-field__submit_agree-box label:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 45.701 45.7'%3E%3Cpath fill='%23171725' d='M20.687 38.332a5.308 5.308 0 0 1-7.505 0L1.554 26.704A5.306 5.306 0 1 1 9.059 19.2l6.928 6.927a1.344 1.344 0 0 0 1.896 0L36.642 7.368a5.308 5.308 0 0 1 7.505 7.504l-23.46 23.46z'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-size: 100%;
+	bottom: 0;
+	box-sizing: border-box;
+	content: "";
+	height: 8px;
+	left: 8px;
+	margin: auto;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 10px
+}
+
+.qform-field__submit_agree-box input[type=checkbox]:checked+label:after {
+	opacity: 1
+}
+
+.qform-field__submit_agree-box input[type=checkbox]:disabled+label {
+	color: #dfdfdf;
+	cursor: default
+}
+
+.qform-field__submit_agree-box input[type=checkbox]:disabled+label:before {
+	border-color: #eaeaea
+}
+
+.qform-field__submit_agree-box__label {
+	-ms-flex-preferred-size: auto;
+	flex-basis: auto;
+	max-width: 280px
+}
+
+.qform-field__submit_agree-box__label_img {
+	box-align: center;
+	-ms-flex-align: center;
+	-ms-flex-item-align: start;
+	align-items: center;
+	align-self: flex-start;
+	border: 1px solid #c4c4c4;
+	box-sizing: border-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 280px;
+	line-height: 280px;
+	outline-width: 0;
+	padding: 9px;
+	width: 280px
+}
+
+.qform-field__submit_agree-box__label_img img {
+	box-sizing: border-box;
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+	min-height: 0;
+	min-width: 0;
+	vertical-align: middle
+}
+
+.qform-field__submit_agree-box__check {
+	-ms-flex-negative: 0;
+	border: 1px solid #c4c4c4;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	height: 25px;
+	margin: 0 10px;
+	position: relative;
+	width: 25px
+}
+
+.qform-field__submit_agree-box__check:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 45.701 45.7'%3E%3Cpath fill='%23171725' d='M20.687 38.332a5.308 5.308 0 0 1-7.505 0L1.554 26.704A5.306 5.306 0 1 1 9.059 19.2l6.928 6.927a1.344 1.344 0 0 0 1.896 0L36.642 7.368a5.308 5.308 0 0 1 7.505 7.504l-23.46 23.46z'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-size: 100%;
+	content: "";
+	display: block;
+	height: 8px;
+	left: 7px;
+	opacity: 0;
+	position: absolute;
+	top: 7px;
+	transition: .2s ease-out;
+	width: 10px
+}
+
+.qform-field__submit_agree-box input[type=checkbox]:checked+label>.qform-field__checkbox_box__check:after {
+	opacity: 1
+}
+
+.qform-field__submit_agree-box input[type=checkbox]:disabled+label>.qform-field__checkbox_box__label {
+	color: #dfdfdf;
+	cursor: default
+}
+
+.qform-field__submit_agree-box input[type=checkbox]:disabled+label>.qform-field__checkbox_box__label:before {
+	border-color: #eaeaea
+}
+
+@media screen and (max-width:400px) {
+	.qform-field__submit_agree-box__label {
+		max-width: 250px
+	}
+	.qform-field__submit_agree-box__label_img {
+		height: 250px;
+		width: 250px
+	}
+}
+
+.qform-field__submit_agree-box.hide,
+.qform-field__submit_wrap-agreement {
+	display: none
+}
+
+.qform-field__submit_wrap-agreement.open {
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #333;
+	display: block;
+	left: 0;
+	margin: auto;
+	min-width: 300px;
+	opacity: 1;
+	padding: 15px;
+	position: fixed;
+	right: 0;
+	top: 20px;
+	transition: .7s;
+	width: 50%;
+	z-index: 9999
+}
+
+.qform-field__submit_wrap-agreement.open .qform-field__submit_wrap-agreement__text {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	font-size: .8em;
+	margin-top: 20px;
+	max-height: calc(100vh - 180px);
+	overflow-y: auto;
+	padding: 20px;
+	text-align: left
+}
+
+.qform-field__submit_wrap-agreement.open .qform-field__submit_wrap-agreement__accept-agree-btn {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px
+}
+
+.qform-field__submit_wrap-agreement.open .qform-field__submit_wrap-agreement__accept-agree-btn .accept-agree,
+.qform-field__submit_wrap-agreement.open .qform-field__submit_wrap-agreement__accept-agree-btn .notaccept-agree {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	margin: 10px;
+	padding: 10px 15px
+}
+
+.qform-field__submit.blue .qform-field__submit__input {
+	background-color: #1c4154
+}
+
+.qform-field__submit.malachite .qform-field__submit__input {
+	background-color: #0cc863
+}
+
+.qform-field__submit.hover-shadow .qform-field__submit__input:not(:disabled):hover {
+	box-shadow: 0 4px 20px rgba(11, 26, 33, .2)
+}
+
+.qform-field__submit.hover-arrow .submit-box:hover .qform-field__submit__input:not(:disabled) {
+	padding-right: 65px
+}
+
+.qform-field__submit.hover-arrow .submit-box:hover:before {
+	opacity: 1;
+	width: 30px
+}
+
+.qform-field__submit.hover-arrow .submit-box:hover:after {
+	opacity: 1
+}
+
+.qform-field__submit.hover-blue .qform-field__submit__input:not(:disabled):hover {
+	background-color: #1c4154
+}
+
+.qform-field__submit.hover-malachite .qform-field__submit__input:not(:disabled):hover {
+	background-color: #0cc863
+}
+
+.qform-field__submit.hover-black .qform-field__submit__input:not(:disabled):hover {
+	background-color: #fff
+}
+
+.qform-field__submit.disabled .submit-box:hover:after,
+.qform-field__submit.disabled .submit-box:hover:before {
+	display: none
+}
+
+form.qform.qform-background.qform-size-sm .qform-row .qform-field__submit__input,
+form.qform.qform-default-background.qform-size-sm .qform-row .qform-field__submit__input,
+form.qform.qform-default.qform-size-sm .qform-row .qform-field__submit__input,
+form.qform.qform-underline-background.qform-size-sm .qform-row .qform-field__submit__input,
+form.qform.qform-underline.qform-size-sm .qform-row .qform-field__submit__input {
+	height: 40px
+}
+
+form.qform.qform-background.qform-size-sm .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-default-background.qform-size-sm .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-default.qform-size-sm .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-underline-background.qform-size-sm .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-underline.qform-size-sm .qform-row .qform-field__submit_agree-box label:before {
+	height: 20px;
+	width: 20px
+}
+
+form.qform.qform-background.qform-size-sm .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-default-background.qform-size-sm .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-default.qform-size-sm .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-underline-background.qform-size-sm .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-underline.qform-size-sm .qform-row .qform-field__submit_agree-box label:after {
+	height: 6px;
+	left: 6px;
+	width: 8px
+}
+
+form.qform.qform-background.qform-size-md .qform-row .qform-field__submit__input,
+form.qform.qform-default-background.qform-size-md .qform-row .qform-field__submit__input,
+form.qform.qform-default.qform-size-md .qform-row .qform-field__submit__input,
+form.qform.qform-underline-background.qform-size-md .qform-row .qform-field__submit__input,
+form.qform.qform-underline.qform-size-md .qform-row .qform-field__submit__input {
+	height: 50px
+}
+
+form.qform.qform-background.qform-size-md .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-default-background.qform-size-md .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-default.qform-size-md .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-underline-background.qform-size-md .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-underline.qform-size-md .qform-row .qform-field__submit_agree-box label:before {
+	height: 25px;
+	width: 25px
+}
+
+form.qform.qform-background.qform-size-md .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-default-background.qform-size-md .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-default.qform-size-md .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-underline-background.qform-size-md .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-underline.qform-size-md .qform-row .qform-field__submit_agree-box label:after {
+	height: 8px;
+	left: 8px;
+	width: 10px
+}
+
+form.qform.qform-background.qform-size-lg .qform-row .qform-field__submit__input,
+form.qform.qform-default-background.qform-size-lg .qform-row .qform-field__submit__input,
+form.qform.qform-default.qform-size-lg .qform-row .qform-field__submit__input,
+form.qform.qform-underline-background.qform-size-lg .qform-row .qform-field__submit__input,
+form.qform.qform-underline.qform-size-lg .qform-row .qform-field__submit__input {
+	height: 60px
+}
+
+form.qform.qform-background.qform-size-lg .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-default-background.qform-size-lg .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-default.qform-size-lg .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-underline-background.qform-size-lg .qform-row .qform-field__submit_agree-box label:before,
+form.qform.qform-underline.qform-size-lg .qform-row .qform-field__submit_agree-box label:before {
+	height: 30px;
+	width: 30px
+}
+
+form.qform.qform-background.qform-size-lg .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-default-background.qform-size-lg .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-default.qform-size-lg .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-underline-background.qform-size-lg .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-underline.qform-size-lg .qform-row .qform-field__submit_agree-box label:after {
+	height: 10px;
+	left: 9px;
+	width: 12px
+}
+
+form.qform.qform-background.qform-radius-0px .qform-row .qform-field__submit__input,
+form.qform.qform-default-background.qform-radius-0px .qform-row .qform-field__submit__input,
+form.qform.qform-default.qform-radius-0px .qform-row .qform-field__submit__input {
+	border-radius: 0
+}
+
+form.qform.qform-background.qform-radius-5px .qform-row .qform-field__submit__input,
+form.qform.qform-default-background.qform-radius-5px .qform-row .qform-field__submit__input,
+form.qform.qform-default.qform-radius-5px .qform-row .qform-field__submit__input {
+	border-radius: 5px
+}
+
+form.qform.qform-background.qform-radius-25px .qform-row .qform-field__submit__input,
+form.qform.qform-default-background.qform-radius-25px .qform-row .qform-field__submit__input,
+form.qform.qform-default.qform-radius-25px .qform-row .qform-field__submit__input,
+form.qform.qform-underline-background.qform-radius-25px .qform-row .qform-field__submit__input {
+	border-radius: 25px
+}
+
+form.qform.qform-theme-black .qform-row .qform-field__submit_agree-box label,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__submit_agree-box label {
+	color: #fff
+}
+
+form.qform.qform-theme-black .qform-row .qform-field__submit_agree-box label:after,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__submit_agree-box label:after {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 45.701 45.7'%3E%3Cpath fill='%23fff' d='M20.687 38.332a5.308 5.308 0 0 1-7.505 0L1.554 26.704A5.306 5.306 0 1 1 9.059 19.2l6.928 6.927a1.344 1.344 0 0 0 1.896 0L36.642 7.368a5.308 5.308 0 0 1 7.505 7.504l-23.46 23.46z'/%3E%3C/svg%3E")
+}
+
+form.qform.qform-theme-black .qform-row .qform-field__submit__input,
+form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__submit__input {
+	background-color: transparent;
+	border: 1px solid silver;
+	color: #fff
+}
+
+.qform_line-nav {
+	padding: 5px;
+	width: 100%
+}
+
+.qform_tab-nav {
+	display: -ms-flexbox;
+	display: flex;
+	padding: 15px 5px
+}
+
+.qform_tab-nav__item {
+	-ms-flex-negative: 0;
+	color: #3f444f;
+	flex-shrink: 0;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 16px;
+	width: 115px
+}
+
+.qform_tab-nav__item,
+.qform_tab-nav__title {
+	-ms-flex-align: center;
+	align-items: center;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.qform_tab-nav__title {
+	-ms-flex-pack: center;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: center
+}
+
+.qform_tab-nav__title>span {
+	display: block
+}
+
+.qform_tab-nav__title>i {
+	background: none;
+	border: 1px solid #b8c1d1;
+	border-radius: 5px;
+	box-sizing: border-box;
+	display: block;
+	height: 25px;
+	margin-bottom: 5px;
+	position: relative;
+	width: 25px
+}
+
+.qform_tab-nav__title>i:after {
+	border: 2px dashed #ebf0fa;
+	content: "";
+	display: block;
+	left: 37px;
+	position: absolute;
+	top: 10.5px;
+	width: 60px
+}
+
+.complete>.qform_tab-nav__title>i:after {
+	top: 11.5px
+}
+
+.active>.qform_tab-nav__title>i:after {
+	left: 33px;
+	top: 7.5px
+}
+
+.form-radius-25px .qform_tab-nav__title>i,
+.form-radius-5px .qform_tab-nav__title>i {
+	border-radius: 50%
+}
+
+.qform_tab-nav__item:last-child i:after {
+	border: none;
+	content: "";
+	height: 0;
+	position: absolute;
+	width: 0
+}
+
+.complete>.qform_tab-nav__title>i {
+	background: #0cc863;
+	border: none
+}
+
+.complete>.qform_tab-nav__title>i:before {
+	background-image: url('data:image/svg+xml;charset=utf-8,<svg width="17" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1.273 6.323 4.824 4.78 9.666-9.54" stroke="%23fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+	background-position: 50%;
+	background-repeat: no-repeat;
+	content: "";
+	display: block;
+	height: 25px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 25px
+}
+
+.active>.qform_tab-nav__title>i {
+	border: 5px solid #0cc863
+}
+
+.form-radius-25px .active>.qform_tab-nav__title>i:before,
+.form-radius-5px .active>.qform_tab-nav__title>i:before {
+	border-radius: 50%
+}
+
+.quiz-nav-vertical {
+	display: -ms-flexbox;
+	display: flex
+}
+
+.quiz-nav-vertical .qform_tab-nav {
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding: 5px
+}
+
+.quiz-nav-vertical .qform_tab-nav__item {
+	height: 115px
+}
+
+.quiz-nav-vertical .qform_tab-nav__title>i:after {
+	height: 60px;
+	left: 9.5px;
+	top: 38px;
+	width: 0
+}
+
+.quiz-nav-vertical .active>.qform_tab-nav__title>i:after {
+	left: 5.5px;
+	top: 33px
+}
+
+.quiz-nav-vertical .complete>.qform_tab-nav__title>i:after {
+	left: 10.5px
+}
+
+.quiz-nav-vertical .qform_tab-nav__title {
+	-ms-flex-direction: row;
+	flex-direction: row
+}
+
+.quiz-nav-vertical .qform_tab-nav__title i {
+	margin-right: 10px
+}
+
+.tabnav-here.tab .tabnav-here__next-btn {
+	cursor: pointer;
+	display: block;
+	height: 25px;
+	margin-left: -5px;
+	margin-top: 17px;
+	position: relative;
+	width: 59px
+}
+
+.tabnav-here.tab .tabnav-here__next-btn:after {
+	border: 2px dashed #ebf0fa;
+	bottom: 11.5px;
+	content: "";
+	display: block;
+	height: 0;
+	position: absolute;
+	right: 25px;
+	width: 30px
+}
+
+.tabnav-here.tab .tabnav-here__next-btn:before {
+	background-image: url('data:image/svg+xml;charset=utf-8,<svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.068 6.022 7 11 1" stroke="%23000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/></svg>');
+	background-position: 50%;
+	background-repeat: no-repeat;
+	bottom: 1px;
+	content: "";
+	display: block;
+	height: 25px;
+	position: absolute;
+	right: 0;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	width: 25px
+}
+
+.tabnav-here.tab .tabnav-here__prev-btn {
+	cursor: pointer;
+	display: block;
+	height: 25px;
+	margin-right: 2px;
+	margin-top: 17px;
+	position: relative;
+	width: 59px
+}
+
+.tabnav-here.tab .tabnav-here__prev-btn:after {
+	border: 2px dashed #ebf0fa;
+	content: "";
+	display: block;
+	height: 0;
+	left: 25px;
+	position: absolute;
+	top: 11.5px;
+	width: 30px
+}
+
+.tabnav-here.tab .tabnav-here__prev-btn:before {
+	background-image: url('data:image/svg+xml;charset=utf-8,<svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 7.932 5.978 2 1 8" stroke="%23000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/></svg>');
+	background-position: 50%;
+	background-repeat: no-repeat;
+	content: "";
+	display: block;
+	height: 25px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	width: 25px
+}
+
+.tabnav-here {
+	display: -ms-flexbox;
+	display: flex
+}
+
+.tabnav-here .tabnav-here__next-btn,
+.tabnav-here .tabnav-here__prev-btn {
+	display: none
+}
+
+.quiz-nav-vertical .tabnav-here.tab {
+	display: block
+}
+
+.quiz-nav-vertical .tabnav-here.tab .tabnav-here__next-btn {
+	cursor: pointer;
+	display: block;
+	height: 59px;
+	left: 4.5px;
+	margin-left: 0;
+	margin-top: 0;
+	position: relative;
+	width: 25px
+}
+
+.quiz-nav-vertical .tabnav-here.tab .tabnav-here__next-btn:after {
+	border: 2px dashed #ebf0fa;
+	bottom: 25px;
+	content: "";
+	display: block;
+	height: 30px;
+	left: 10.5px;
+	position: absolute;
+	width: 0
+}
+
+.quiz-nav-vertical .tabnav-here.tab .tabnav-here__next-btn:before {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 25px;
+	left: 0;
+	position: absolute;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	width: 25px
+}
+
+.quiz-nav-vertical .tabnav-here.tab .tabnav-here__prev-btn {
+	cursor: pointer;
+	display: block;
+	height: 59px;
+	left: 5.5px;
+	margin-top: 0;
+	position: relative;
+	width: 25px
+}
+
+.quiz-nav-vertical .tabnav-here.tab .tabnav-here__prev-btn:after {
+	border: 2px dashed #ebf0fa;
+	content: "";
+	display: block;
+	height: 30px;
+	left: 10.5px;
+	position: absolute;
+	top: 25px;
+	width: 0
+}
+
+.quiz-nav-vertical .tabnav-here.tab .tabnav-here__prev-btn:before {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	content: "";
+	display: block;
+	height: 25px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	width: 25px
+}
+
+.qform_line-nav__box {
+	-ms-flex-align: center;
+	align-items: center;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 5px
+}
+
+.qform_line-nav__title {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px
+}
+
+.qform_line-nav__step,
+.qform_line-nav__title {
+	color: #3f444f;
+	font-family: Roboto\ 2 !important;
+	font-style: normal
+}
+
+.qform_line-nav__step {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px
+}
+
+.qform_line-nav__step span {
+	color: #8a95ac
+}
+
+.qform_line-nav__bar {
+	background: #ebf0fa;
+	display: -ms-flexbox;
+	display: flex;
+	height: 5px;
+	width: 100%
+}
+
+.qform_line-nav__bar .qform_line-nav__item {
+	background: none;
+	height: 5px;
+	width: 100%
+}
+
+.qform_line-nav__bar .complete {
+	background: #0cc863
+}
+
+.qform_line-nav__step-all {
+	color: #3f444f;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: Roboto\ 2 !important;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 16px;
+	margin-left: 14px;
+	text-align: right
+}
+
+.qform_line-nav__step-all span {
+	color: #8a95ac
+}
+
+.tabnav-here.qform-theme-black {
+	background-color: transparent
+}
+
+.tabnav-here.qform-theme-black .qform_line-nav .qform_line-nav__step,
+.tabnav-here.qform-theme-black .qform_line-nav .qform_line-nav__step-all,
+.tabnav-here.qform-theme-black .qform_line-nav .qform_line-nav__title,
+.tabnav-here.qform-theme-black .qform_tab-nav .qform_tab-nav__item .qform_tab-nav__title span {
+	color: #fff
+}
+
+.tabnav-here.qform-theme-black .tabnav-here__next-btn:before {
+	background-image: url('data:image/svg+xml;charset=utf-8,<svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.068 6.022 7 11 1" stroke="%23fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/></svg>')
+}
+
+.tabnav-here.qform-theme-black .tabnav-here__prev-btn:before {
+	background-image: url('data:image/svg+xml;charset=utf-8,<svg width="12" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 7.932 5.978 2 1 8" stroke="%23fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/></svg>')
+}
+
+.qform-captcha__box {
+	display: none
+}
+
+.qform-captcha__box-actions {
+	-ms-flex-pack: distribute;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-around;
+	width: 100%
+}
+
+.qform-captcha__box-actions__close,
+.qform-captcha__box-actions__continue {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1em;
+	padding: 5px 10px
+}
+
+.qform-captcha__box.open {
+	-ms-flex-pack: justify;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #333;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+	left: 0;
+	margin: auto;
+	min-height: 200px;
+	min-width: 300px;
+	opacity: 1;
+	padding: 20px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 20px;
+	transition: .7s;
+	width: 344px;
+	z-index: 9999
+}
+
+div[data-formid] div .btn_modal-box .btn-modal {
+	background-color: #212120;
+	border: none;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font-family: Roboto\ 2 !important;
+	font-size: 16px;
+	font-weight: 600;
+	height: 50px;
+	min-width: 180px;
+	outline: none
+}
+
+div[data-formid] div .form-overlay {
+	background: rgba(0, 0, 0, .7);
+	height: 100%;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999
+}
+
+div[data-formid] div .form-overlay .form-modal {
+	background: #fff;
+	display: block;
+	margin: 20px;
+	min-height: 200px;
+	min-width: 240px;
+	padding: 70px 20px 20px;
+	position: relative
+}
+
+div[data-formid] div .form-overlay .form-modal__close-btn {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='21' height='21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23000' stroke-width='3' d='M19.914 19.096 1.879 1.061M2 19.395 20.035 1.36'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+	cursor: pointer;
+	display: block;
+	height: 21px;
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	width: 21px
+}
+
+div[data-formid] div .form-overlay.hidden {
+	display: none!important
+}
+
+div[data-formid] div .btn_modal-box.qform-size-sm .btn-modal {
+	height: 40px
+}
+
+div[data-formid] div .btn_modal-box.qform-size-md .btn-modal {
+	height: 50px
+}
+
+div[data-formid] div .btn_modal-box.qform-size-lg .btn-modal {
+	height: 60px
+}
+
+div[data-formid] div .btn_modal-box.qform-background.qform-radius-0px .btn-modal,
+div[data-formid] div .btn_modal-box.qform-default-background.qform-radius-0px .btn-modal,
+div[data-formid] div .btn_modal-box.qform-default.qform-radius-0px .btn-modal {
+	border-radius: 0
+}
+
+div[data-formid] div .btn_modal-box.qform-background.qform-radius-5px .btn-modal,
+div[data-formid] div .btn_modal-box.qform-default-background.qform-radius-5px .btn-modal,
+div[data-formid] div .btn_modal-box.qform-default.qform-radius-5px .btn-modal {
+	border-radius: 5px
+}
+
+div[data-formid] div .btn_modal-box.qform-background.qform-radius-25px .btn-modal,
+div[data-formid] div .btn_modal-box.qform-default-background.qform-radius-25px .btn-modal,
+div[data-formid] div .btn_modal-box.qform-default.qform-radius-25px .btn-modal,
+div[data-formid] div .btn_modal-box.qform-underline-background.qform-radius-25px .btn-modal {
+	border-radius: 25px
+}
+
+div[data-formid] div .btn_modal-box.qform-theme-black .btn-modal,
+div[data-formid] div .btn_modal-box.qform-underline-background.qform-theme-black .btn-modal {
+	background-color: transparent;
+	border: 1px solid silver;
+	color: #fff
+}
+
+div[data-formid] div .form-overlay.qform-theme-black .form-modal {
+	background-color: transparent
+}
+
+div[data-formid] div .form-overlay.qform-theme-black .form-modal__close-btn {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='21' height='21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='3' d='M19.914 19.096 1.879 1.061M2 19.395 20.035 1.36'/%3E%3C/svg%3E")
+}
+
+form.qform {
+	position: relative
+}
+
+form.qform .qform-loader {
+	display: none;
+	left: 0;
+	min-height: 60px;
+	position: absolute;
+	top: 0
+}
+
+form.qform .qform-loader,
+form.qform .qform-loader-box {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	width: 100%
+}
+
+form.qform .qform-loader-box {
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0;
+	min-height: 30px
+}
+
+form.qform .qform-loader-box__dot {
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: loader;
+	animation-name: loader;
+	margin: 5px;
+	position: relative
+}
+
+form.qform .qform-loader-box__dot:before {
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: loaderAfter;
+	animation-name: loaderAfter;
+	background: #1c4154;
+	border-radius: 3px;
+	content: "";
+	height: 100%;
+	left: 0;
+	margin-right: -17px;
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+
+form.qform .qform-loader-box__dot:after {
+	background: #68d62c;
+	border-radius: 3px;
+	bottom: 0;
+	content: "";
+	height: 89%;
+	position: absolute;
+	right: 0;
+	width: 89%
+}
+
+form.qform .qform-loader-box__dot:first-child {
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s
+}
+
+form.qform .qform-loader-box__dot:nth-child(2) {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
+}
+
+form.qform .qform-loader-box__dot:nth-child(3) {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s
+}
+
+form.qform .qform-loader-box__dot:nth-child(4) {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s
+}
+
+form.qform .qform-loader-box__dot:nth-child(5) {
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s
+}
+
+@-webkit-keyframes loader {
+	0% {
+		border-radius: 1px;
+		height: 2px;
+		width: 2px
+	}
+	to {
+		border-radius: 10px;
+		height: 20px;
+		width: 20px
+	}
+}
+
+@keyframes loader {
+	0% {
+		border-radius: 1px;
+		height: 2px;
+		width: 2px
+	}
+	to {
+		border-radius: 10px;
+		height: 20px;
+		width: 20px
+	}
+}
+
+@-webkit-keyframes loaderAfter {
+	0% {
+		-webkit-transform: translateX(-3px);
+		transform: translateX(-3px)
+	}
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+
+@keyframes loaderAfter {
+	0% {
+		-webkit-transform: translateX(-3px);
+		transform: translateX(-3px)
+	}
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+
+form.qform .qform-loader.open {
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute
+}
+
+.qform-widget .qform-widget_wrap {
+	background-color: #fff;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	bottom: 50px;
+	box-shadow: 0 4px 20px rgba(11, 26, 33, .25);
+	height: 200px;
+	left: 50px;
+	position: fixed;
+	transition: width .3s ease, height .3s ease, border .2s ease, background-color .2s ease;
+	width: 144px;
+	z-index: 1000000
+}
+
+.qform-widget .controls-top {
+	-ms-flex-pack: justify;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	box-sizing: border-box;
+	display: none;
+	justify-content: space-between;
+	padding: 15px 30px;
+	position: absolute;
+	top: 0;
+	width: 450px;
+	z-index: 9999
+}
+
+.qform-widget .controls-top_left,
+.qform-widget .controls-top_right {
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%
+}
+
+.qform-widget .controls-top_left {
+	-ms-flex-pack: start;
+	justify-content: flex-start
+}
+
+.qform-widget .controls-top_right {
+	-ms-flex-pack: end;
+	justify-content: flex-end
+}
+
+.qform-widget .controls-top .mute {
+	background: hsla(0, 0%, 100%, .3);
+	border-radius: 5px;
+	display: inline-block;
+	height: 30px;
+	width: 30px
+}
+
+.qform-widget .controls-top .mute .icon-mute {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='30' height='30' rx='5' fill='%23fff' fill-opacity='.3'/%3E%3Cpath d='M13 10.22 9.603 13H6v4h3.603L13 19.78v-9.56ZM8.889 19H5a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h3.889l5.294-4.332a.5.5 0 0 1 .817.387v15.89a.5.5 0 0 1-.817.387L8.89 19h-.001Zm14.525-4 3.536 3.536-1.414 1.414L22 16.414l-3.536 3.536-1.414-1.414L20.586 15l-3.536-3.536 1.414-1.414L22 13.586l3.536-3.536 1.414 1.414L23.414 15Z' fill='%23fff'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-repeat: no-repeat;
+	display: block;
+	height: 100%;
+	width: 100%
+}
+
+.qform-widget .controls-top .restart {
+	background: hsla(0, 0%, 100%, .3);
+	border-radius: 5px;
+	display: inline-block;
+	height: 30px;
+	margin-right: 10px;
+	width: 30px
+}
+
+.qform-widget .controls-top .restart .icon-restart {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10S0 15.523 0 10h2a8 8 0 1 0 1.865-5.135L6 7H0V1l2.447 2.446A9.98 9.98 0 0 1 10 0Z' fill='%23fff'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-repeat: no-repeat;
+	display: block;
+	height: 100%;
+	width: 100%
+}
+
+.qform-widget .controls-top .time {
+	-ms-flex-align: center;
+	align-items: center;
+	color: #fff;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: Roboto\ 2 !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 16px;
+	min-width: 40px
+}
+
+.qform-widget .actions {
+	height: 20px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 20px;
+	z-index: 1000
+}
+
+.qform-widget .actions .close,
+.qform-widget .actions .collapse {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: none;
+	outline: none
+}
+
+.qform-widget .actions.close .close {
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	position: relative;
+	width: 100%
+}
+
+.qform-widget .actions.close .close:before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.qform-widget .actions.close .close:after,
+.qform-widget .actions.close .close:before {
+	background: #fff none repeat scroll 0 0;
+	content: " ";
+	height: 18px;
+	left: 9px;
+	position: absolute;
+	top: 1px;
+	width: 2px
+}
+
+.qform-widget .actions.close .close:after {
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg)
+}
+
+.qform-widget .actions.collapse .collapse {
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	position: relative;
+	width: 100%
+}
+
+.qform-widget .actions.collapse .collapse:before {
+	background: #fff none repeat scroll 0 0;
+	content: " ";
+	height: 18px;
+	left: 9px;
+	position: absolute;
+	top: 1px;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	width: 2px
+}
+
+.qform-widget .loader {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	bottom: 0;
+	display: none;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.qform-widget .loader.show {
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 9
+}
+
+.qform-widget .loader:after {
+	-webkit-animation: lds-dual-ring 1.2s linear infinite;
+	animation: lds-dual-ring 1.2s linear infinite;
+	border-color: #9e9e9e transparent;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 6px;
+	content: " ";
+	display: block;
+	height: 40px;
+	margin: 8px;
+	width: 40px
+}
+
+@-webkit-keyframes lds-dual-ring {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+
+@keyframes lds-dual-ring {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(1turn);
+		transform: rotate(1turn)
+	}
+}
+
+.qform-widget .views-box {
+	height: 100%;
+	width: 100%
+}
+
+.qform-widget .views-box_tab {
+	display: none;
+	height: 100%;
+	width: 100%
+}
+
+.qform-widget .views-box_tab.active {
+	display: block
+}
+
+.qform-widget .views-box_controls {
+	border: 10px solid hsla(0, 0%, 100%, .3);
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: none;
+	height: 80px;
+	left: 185px;
+	padding: 6px;
+	position: absolute;
+	top: calc(50% - 40px);
+	width: 80px;
+	z-index: 5
+}
+
+.qform-widget .views-box_controls .play {
+	background-color: #fff;
+	border-radius: 50%;
+	display: none;
+	height: 100%;
+	width: 100%
+}
+
+.qform-widget .views-box_controls .play .icon-play {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='21' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.941 24.353V.823l19.412 11.765L.94 24.353Z' fill='%2307B859'/%3E%3C/svg%3E");
+	background-position: 16px;
+	background-repeat: no-repeat;
+	display: block;
+	height: 100%;
+	width: 100%
+}
+
+.qform-widget .views-box_controls .restart {
+	background-color: #fff;
+	border-radius: 50%;
+	display: none;
+	height: 100%;
+	width: 100%
+}
+
+.qform-widget .views-box_controls .restart .icon-restart {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0c8.285 0 15 6.715 15 15s-6.715 15-15 15S0 23.285 0 15h3c0 6.627 5.373 12 12 12s12-5.373 12-12S21.627 3 15 3a11.975 11.975 0 0 0-9.203 4.298L9 10.5H0v-9l3.67 3.669A14.969 14.969 0 0 1 15 0Z' fill='%2307B859'/%3E%3C/svg%3E");
+	background-position: 50%;
+	background-repeat: no-repeat;
+	display: block;
+	height: 100%;
+	width: 100%
+}
+
+.qform-widget .views-box_content {
+	height: 100%;
+	position: relative;
+	width: 100%
+}
+
+.qform-widget .views-box_content_form {
+	background-color: rgba(0, 0, 0, .45);
+	bottom: 0;
+	display: none;
+	max-height: 50%;
+	min-height: 150px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	width: 100%
+}
+
+.qform-widget .menu {
+	-ms-flex-align: center;
+	-ms-flex-pack: end;
+	align-items: center;
+	bottom: 51px;
+	display: none;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0 10px;
+	position: absolute;
+	width: 260px
+}
+
+.qform-widget .menu_btn {
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #000;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: Roboto\ 2 !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	justify-content: center;
+	line-height: 20px;
+	margin-bottom: 5px;
+	max-width: 260px;
+	min-height: 37px;
+	outline: none;
+	padding: 5px;
+	text-align: center;
+	transition: .3s;
+	width: 100%
+}
+
+.qform-widget .menu_btn:hover {
+	border-color: #fcfbfb
+}
+
+.qform-widget .label-qform {
+	bottom: 20px;
+	color: #fff;
+	display: none;
+	font-family: Roboto\ 2;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 800;
+	letter-spacing: .04em;
+	line-height: 12px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%
+}
+
+.qform-widget video {
+	border-radius: 12px;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	transition: all .5s ease;
+	width: 100%
+}
+
+.qform-widget .body {
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	align-items: center;
+	bottom: 50px;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100px;
+	justify-content: center;
+	left: 0;
+	padding: 0 10px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	transition: .2s linear
+}
+
+.qform-widget .body button {
+	-ms-flex-positive: 1;
+	background-color: #665c84;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	display: block;
+	flex-grow: 1;
+	font-size: 17px;
+	font-weight: 200;
+	overflow: hidden;
+	padding: 15px;
+	position: relative;
+	transition-property: padding, -webkit-filter;
+	transition-property: padding, filter;
+	transition-property: padding, filter, -webkit-filter
+}
+
+.qform-widget .body button,
+.qform-widget .footer {
+	color: #fff;
+	font-family: Open Sans, sans-serif;
+	transition-duration: .3s
+}
+
+.qform-widget .footer {
+	background-color: #53535354;
+	bottom: 0;
+	font-size: 10px;
+	font-weight: 300;
+	height: 25px;
+	left: 0;
+	line-height: 25px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	transition-property: opacity;
+	transition: .1s linear
+}
+
+.qform-widget.circle .qform-widget_wrap {
+	border-radius: 50%;
+	height: 80px;
+	width: 80px
+}
+
+.qform-widget.circle .actions {
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 4px 20px rgba(11, 26, 33, .1);
+	right: -2px;
+	top: -2px
+}
+
+.qform-widget.circle .actions .close:after,
+.qform-widget.circle .actions .close:before {
+	background-color: #666d70;
+	height: 13px;
+	left: 9px;
+	top: 3px
+}
+
+.qform-widget.circle video {
+	border-radius: 50%
+}
+
+.qform-widget.circle.expanded .qform-widget_wrap .actions {
+	background: none;
+	border-radius: none;
+	box-shadow: none;
+	right: 5px;
+	top: 5px
+}
+
+.qform-widget.circle.expanded .qform-widget_wrap .actions .close:after,
+.qform-widget.circle.expanded .qform-widget_wrap .actions .close:before {
+	background: #fff none repeat scroll 0 0;
+	height: 18px;
+	left: 9px;
+	top: 1px;
+	width: 2px
+}
+
+.qform-widget_wrap:hover {
+	background-color: #07b859;
+	border: 2px solid #07b859;
+	cursor: pointer
+}
+
+.qform-widget.expanded .qform-widget_wrap {
+	background-color: #07b859;
+	border: 3px solid #07b859;
+	border-radius: 15px;
+	height: 500px;
+	width: 280px
+}
+
+.qform-widget.expanded .menu,
+.qform-widget.expanded .views-box_content_form {
+	display: -ms-flexbox;
+	display: flex
+}
+
+.qform-widget.expanded .label-qform {
+	display: block
+}
+
+.qform-widget.expanded video {
+	border-radius: 12px
+}
+
+.qform-widget .menu.hide,
+.qform-widget.expanded .menu.hide {
+	display: none
+}
+
+@media screen and (max-width:380px) {
+	.qform-widget_wrap {
+		left: calc(50% - 143px)
+	}
+}
+
+.qform-widget.integrated .qform-widget_wrap {
+	background-color: #07b859;
+	background: linear-gradient(180deg, rgba(11, 26, 33, 0) 81.3%, rgba(11, 26, 33, .6));
+	border-color: #07b859;
+	border-radius: 12px;
+	display: inline-block;
+	height: 390px;
+	position: inherit;
+	width: 224px
+}
+
+.qform-widget.integrated .qform-widget_wrap .actions {
+	display: none
+}
+
+.qform-widget.integrated .menu {
+	padding: 0;
+	width: 100%
+}
+
+.qform-widget.integrated .menu_btn {
+	max-width: 200px
+}
+
+.qform-widget.integrated video {
+	border-radius: 12px
+}
+
+.qform-widget.integrated.expanded {
+	background-color: #090909b0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2
+}
+
+.qform-widget.integrated.expanded .views-box_controls.play,
+.qform-widget.integrated.expanded .views-box_controls.play .play,
+.qform-widget.integrated.expanded .views-box_controls.restart,
+.qform-widget.integrated.expanded .views-box_controls.restart .restart {
+	display: block
+}
+
+.qform-widget.integrated.expanded .qform-widget_wrap {
+	border: none;
+	height: 90%;
+	left: calc(50% - 225px);
+	max-height: 900px;
+	min-height: 400px;
+	position: fixed;
+	top: 15px;
+	width: 450px
+}
+
+.qform-widget.integrated.expanded .controls-top {
+	display: -ms-flexbox;
+	display: flex
+}
+
+.qform-widget.integrated.expanded .menu {
+	padding: 0;
+	width: 100%
+}
+
+.qform-widget.integrated.expanded .menu_btn {
+	max-width: 400px
+}
+
+.qform-widget.integrated.expanded .actions {
+	display: none
+}
+
+@media screen and (max-width:520px) {
+	.qform-widget.integrated.expanded .qform-widget_wrap {
+		height: 90%;
+		left: calc(50% - 150px);
+		max-height: 600px;
+		min-height: 300px;
+		top: 10px;
+		width: 300px
+	}
+	.qform-widget.integrated.expanded .controls-top {
+		width: 300px
+	}
+	.qform-widget.integrated.expanded .views-box_content_controls {
+		left: 110px
+	}
+}
+
+.qform-widget.btn-green .menu_btn {
+	background-color: #0cc863
+}
+
+.qform-widget.btn-blue .menu_btn {
+	background-color: #1c4154
+}
+
+.qform-widget.btn-white .menu_btn {
+	background-color: #fff;
+	color: #0cc863
+}
+
+.qform-widget.btn-grad .menu_btn {
+	background: linear-gradient(112.48deg, #0cc863 11.62%, #9d1 84.44%);
+	color: #fff
+}
